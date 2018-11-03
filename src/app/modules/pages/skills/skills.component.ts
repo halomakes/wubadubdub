@@ -12,7 +12,7 @@ import { Subscription } from 'rxjs';
 export class SkillsComponent implements OnInit {
 
   constructor(public navbar: NavbarService, private http: HttpClient) { }
-  private languages: Array<LanguageIcon>;
+  languages: Array<LanguageIcon>;
 
   ngOnInit() {
     this.navbar.makeOpaque();
