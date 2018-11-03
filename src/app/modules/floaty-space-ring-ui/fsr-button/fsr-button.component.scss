@@ -1,0 +1,26 @@
+@import "../values.scss";
+.fsr-button {
+    font-family: $font;
+    color: $white;
+    background-color: $primary;
+    padding-left: $md;
+    padding-right: $md;
+    padding-top: $sm;
+    padding-bottom: $sm;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: $border-thick;
+    border-style: solid;
+    border-color: lighten($primary, $brightnessOffset);
+    transition: $animate-interact;
+    display: inline-block;
+    user-select: none;
+    box-shadow: $glow;
+    &:active {
+        transform: scale($depress);
+    }
+}
+
+.fsr-button-lg {
+    font-size: 1.4rem;
+}
