@@ -20,7 +20,7 @@ export class FsrButtonComponent {
       y: event.pageY - this.el.nativeElement.offsetTop
     }
 
-  private getBackgroundGradient = () => {
+  getBackgroundGradient = () => {
     if (this.solid) {
       return {
         'background': `radial-gradient(circle at ${this.gradient.x}px ${this.gradient.y}px, #8941f4, #5219a8)`
@@ -32,7 +32,7 @@ export class FsrButtonComponent {
     }
   }
 
-  private getBorderGradient = () => {
+  getBorderGradient = () => {
     if (this.color === 'primary') {
       return {
         'background': `radial-gradient(circle at ${this.gradient.x}px ${this.gradient.y}px, #ab7af4 0%, #8941f4 20%, #5219a8 100%)`
