@@ -1,16 +1,32 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, HostListener, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'fsr-button',
   templateUrl: './fsr-button.component.html',
   styleUrls: ['./fsr-button.component.scss']
 })
-export class FsrButtonComponent implements OnInit {
+export class FsrButtonComponent {
+  @Input() size: string;
+  private gradient: { x: number, y: number } = { x: 0, y: 0 };
 
-  constructor() { }
+  constructor(public el: ElementRef<HTMLElement>) { }
 
-  ngOnInit() {
+  @HostListener('mousemove', ['$event'])
+  onmousemove = (event: MouseEvent): { x: number, y: number } =>
+    this.gradient = {
+      x: event.pageX - this.el.nativeElement.offsetLeft,
+      y: event.pageY - this.el.nativeElement.offsetTop
+    }
+
+  private getBackgroundGradient = () => {
+    return {
+      'background': `radial-gradient(circle at ${this.gradient.x}px ${this.gradient.y}px, #8941f4, #5219a8)`
+    };
   }
 
-  @Input('size') size: string;
+  private getBorderGradient = () => {
+    return {
+      'background': `radial-gradient(circle at ${this.gradient.x}px ${this.gradient.y}px, #ab7af4 0%, #8941f4 20%, #5219a8 100%)`
+    };
+  }
 }

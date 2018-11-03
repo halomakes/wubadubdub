@@ -1,26 +1,45 @@
 @import "../../../../values.scss";
+
+.overlay {
+  overflow: overlay;
+  float: left;
+  position: relative;
+  transition: $animate-interact;
+  &:active {
+    transform: scale($depress);
+  }
+}
+
+:host {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.fsr-btn-outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .fsr-button {
-    font-family: $font;
-    color: $white;
-    background-color: $primary;
-    padding-left: $md;
-    padding-right: $md;
-    padding-top: $sm;
-    padding-bottom: $sm;
-    text-decoration: none;
-    cursor: pointer;
-    border-width: $border-thick;
-    border-style: solid;
-    border-color: lighten($primary, $brightnessOffset);
-    transition: $animate-interact;
-    display: inline-block;
-    user-select: none;
-    box-shadow: $glow;
-    &:active {
-        transform: scale($depress);
-    }
+  font-family: $font;
+  color: $white;
+  padding-left: $md;
+  padding-right: $md;
+  padding-top: $sm;
+  padding-bottom: $sm;
+  text-decoration: none;
+  transition: $animate-interact;
+  display: inline-block;
+  user-select: none;
+  box-shadow: $glow;
+  position: relative;
+  margin: $border-thick;
 }
 
 .fsr-button-lg {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }

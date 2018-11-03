@@ -1,3 +1,6 @@
-<span class="fsr-button" [class.fsr-button-lg]="size==='large'" [class.fsr-button-sm]="size==='small'">
-  <ng-content></ng-content>
+<span class="overlay">
+  <span class="fsr-btn-outline" [ngStyle]="getBorderGradient()"></span>
+  <div class="fsr-button" [class.fsr-button-lg]="size==='large'" [class.fsr-button-sm]="size==='small'" [ngStyle]="getBackgroundGradient()">
+    <ng-content></ng-content>
+  </div>
 </span>
