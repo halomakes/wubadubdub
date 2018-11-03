@@ -5,6 +5,7 @@
   float: left;
   position: relative;
   transition: $animate-interact;
+
   &:active {
     transform: scale($depress);
   }
@@ -24,6 +25,22 @@
   right: 0;
 }
 
+.fsr-btn-clip {
+    clip-path: polygon(
+        $border-thick $border-thick, /*inside top left*/
+        calc(100% - #{$border-thick}) $border-thick, /*inside top right*/
+        calc(100% - #{$border-thick}) calc(100% - #{$border-thick}), /*inside bottom right*/
+        $border-thick calc(100% - #{$border-thick}), /*inside bottom left*/
+        $border-thick $border-thick, /*inside top left*/
+        0% 0%, /*top left*/
+        0% 100%, /*bottom left*/
+        100% 100%, /*bottom right*/
+        100% 0%, /*top right*/
+        0% 0%, /*top left*/
+        $border-thick $border-thick /*inside top left*/
+        )
+}
+
 .fsr-button {
   font-family: $font;
   color: $white;
@@ -35,11 +52,14 @@
   transition: $animate-interact;
   display: inline-block;
   user-select: none;
-  box-shadow: $glow;
   position: relative;
   margin: $border-thick;
 }
 
 .fsr-button-lg {
   font-size: 1.4rem;
+}
+
+.glow {
+  box-shadow: $glow;
 }
