@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FloatySpaceRingUiModule } from './modules/floaty-space-ring-ui/floaty-space-ring-ui.module';
 import { PagesModule } from './modules/pages/pages.module';
+import { ComponentsModule } from './modules/components/components.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PagesModule } from './modules/pages/pages.module';
     BrowserModule,
     AppRoutingModule,
     FloatySpaceRingUiModule,
-    PagesModule
+    PagesModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

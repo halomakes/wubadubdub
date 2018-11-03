@@ -1,0 +1,29 @@
+$sides: (top, bottom, left, right);
+
+@for $i from 0 to 10 {
+    $space: $i * 5;
+    @each $side in $sides {
+        .m#{str-slice($side, 0, 1)}-#{$i} {
+            margin-#{$side}: #{$space}px !important;
+        }
+        .p#{str-slice($side, 0, 1)}-#{$i} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+    .my-#{$i} {
+        margin-top: #{$space}px !important;
+        margin-bottom: #{$space}px !important;
+    }
+    .mx-#{$i} {
+        margin-left: #{$space}px !important;
+        margin-right: #{$space}px !important;
+    }
+    .py-#{$i} {
+        padding-top: #{$space}px !important;
+        padding-bottom: #{$space}px !important;
+    }
+    .px-#{$i} {
+        padding-left: #{$space}px !important;
+        padding-right: #{$space}px !important;
+    }
+}
