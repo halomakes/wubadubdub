@@ -3,7 +3,6 @@ import { NavbarService } from '../../components/navbar.service';
 import { LanguageIcon } from './language-icon';
 import { HttpClient } from '@angular/common/http';
 import { Subscription } from 'rxjs';
-import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-skills',
@@ -24,7 +23,7 @@ export class SkillsComponent implements OnInit {
     this.http.get<LanguageIcon[]>('assets/data/languages.json')
       .subscribe(r => this.languages = r)
 
-  private getStyle = (l: LanguageIcon) => {
+  getStyle = (l: LanguageIcon) => {
     return {
       'background-image': `url('assets/svg/icon/${l.fileName}.svg')`
     };

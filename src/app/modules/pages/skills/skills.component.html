@@ -12,7 +12,8 @@
           <h3 class="my-4">Specialties</h3>
           <ul>
             <li class="language-tag">
-              <img src="assets/svg/icon/csharp.svg" alt="C#">
+              <img src="assets/svg/icon/csharp.svg" alt="C#" tooltip="C#" placement="left" show-delay="200"
+                tooltip-class="tooltip">
               <ul>
                 <li>ASP.NET Core</li>
                 <li>ASP.NET MVC 5</li>
@@ -20,20 +21,23 @@
               </ul>
             </li>
             <li class="language-tag">
-              <img src="assets/svg/icon/ts.svg" alt="TypeScript">
+              <img src="assets/svg/icon/ts.svg" alt="TypeScript" tooltip="TypeScript" placement="left" show-delay="200"
+                tooltip-class="tooltip">
               <ul>
                 <li>Angular</li>
               </ul>
             </li>
             <li class="language-tag">
-              <img src="assets/svg/icon/java.svg" alt="Java">
+              <img src="assets/svg/icon/java.svg" alt="Java" tooltip="Java" placement="left" show-delay="200"
+                tooltip-class="tooltip">
               <ul>
                 <li>Android</li>
                 <li>Camel</li>
               </ul>
             </li>
             <li class="language-tag">
-              <img src="assets/svg/icon/ps.svg" alt="TypeScript">
+              <img src="assets/svg/icon/ps.svg" alt="TypeScript" tooltip="PowerShell" placement="left" show-delay="200"
+                tooltip-class="tooltip">
               <ul>
                 <li>Windows PowerShell</li>
                 <li>PowerShell Core</li>
@@ -44,7 +48,8 @@
         <div class="col-4">
           <h3 class="my-4">Other Proficiencies</h3>
           <div class="flex flex-wrap flex-row language-list">
-            <span *ngFor="let l of languages" [ngStyle]="getStyle(l)" alt="l.description" class="language-list-item"></span>
+            <span *ngFor="let l of languages" [ngStyle]="getStyle(l)" alt="l.description" class="language-list-item"
+              [tooltip]="l.description" show-delay="200" tooltip-class="tooltip"></span>
           </div>
         </div>
         <div class="col-4">

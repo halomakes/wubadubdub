@@ -5,6 +5,7 @@ import { FloatySpaceRingUiModule } from '../floaty-space-ring-ui/floaty-space-ri
 import { SkillsComponent } from './skills/skills.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { TooltipModule } from 'ng2-tooltip-directive';
 
 @NgModule({
   declarations: [HomeComponent, SkillsComponent],
@@ -12,7 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     FloatySpaceRingUiModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    TooltipModule
   ],
   exports: [
     HomeComponent,
