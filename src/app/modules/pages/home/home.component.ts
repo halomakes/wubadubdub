@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { NavbarService } from '../../components/navbar.service';
 
 @Component({
@@ -14,4 +14,12 @@ export class HomeComponent implements OnInit {
     this.navbar.makeTransparent();
   }
 
+  @HostListener('window:scroll', ['$event'])
+  private checkScroll = (event: any): void => {
+    if (event.srcElement.scrollingElement.scrollTop > 0) {
+      this.navbar.makeOpaque();
+    } else {
+      this.navbar.makeTransparent();
+    }
+  }
 }

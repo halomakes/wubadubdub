@@ -9,16 +9,24 @@ export class FsrButtonComponent {
   @Input() size: string;
   @Input() color = 'primary';
   @Input() solid = true;
+  @Input() fixed = false;
   private gradient: { x: number, y: number } = { x: 0, y: 0 };
+  private lastScrollPos = 0;
 
   constructor(public el: ElementRef<HTMLElement>) { console.log(this.solid); }
 
-  @HostListener('document:mousemove', ['$event'])
-  onmousemove = (event: MouseEvent): { x: number, y: number } =>
+  @HostListener('window:mousemove', ['$event'])
+  onmousemove = (event: MouseEvent): void => {
     this.gradient = {
       x: event.pageX - this.el.nativeElement.offsetLeft,
-      y: event.pageY - this.el.nativeElement.offsetTop
-    }
+      y: event.pageY - this.el.nativeElement.offsetTop - (this.fixed ? this.lastScrollPos : 0)
+    };
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  private checkScroll = (event: any): void => {
+    this.lastScrollPos = event.srcElement.scrollingElement.scrollTop;
+  }
 
   getBackgroundGradient = () => {
     if (this.solid) {

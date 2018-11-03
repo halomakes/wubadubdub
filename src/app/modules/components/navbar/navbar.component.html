@@ -1,4 +1,4 @@
-<div class="flex text-white pos-fixed w-100" [class.bg-dim]="navbar.isOpaque()" [hidden]="!navbar.isVisible()">
+<div class="flex text-white pos-fixed w-100 navbar" [class.bg-dim]="navbar.isOpaque()" [hidden]="!navbar.isVisible()">
   <div class="container">
     <div class="flex justify-between items-center">
       <div class="flex items-center">
@@ -6,10 +6,10 @@
         <span class="ml-3">halomademeapc</span>
       </div>
       <div class="flex">
-        <fsr-button color="white" [solid]="false">Home</fsr-button>
-        <fsr-button color="white" [solid]="false">Experience</fsr-button>
-        <fsr-button color="white" [solid]="false">Creations</fsr-button>
-        <fsr-button color="white" [solid]="false">Contact</fsr-button>
+        <fsr-button color="white" [solid]="false" [fixed]="true">Home</fsr-button>
+        <fsr-button color="white" [solid]="false" [fixed]="true">Experience</fsr-button>
+        <fsr-button color="white" [solid]="false" [fixed]="true">Creations</fsr-button>
+        <fsr-button color="white" [solid]="false" [fixed]="true">Contact</fsr-button>
       </div>
     </div>
   </div>
