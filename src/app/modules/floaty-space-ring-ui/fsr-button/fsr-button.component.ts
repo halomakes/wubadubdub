@@ -13,7 +13,7 @@ export class FsrButtonComponent {
   private gradient: { x: number, y: number } = { x: 0, y: 0 };
   private lastScrollPos = 0;
 
-  constructor(public el: ElementRef<HTMLElement>) { console.log(this.solid); }
+  constructor(public el: ElementRef<HTMLElement>) { }
 
   @HostListener('window:mousemove', ['$event'])
   onmousemove = (event: MouseEvent): void => {
