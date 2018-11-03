@@ -4,13 +4,15 @@ import { HomeComponent } from './home/home.component';
 import { FloatySpaceRingUiModule } from '../floaty-space-ring-ui/floaty-space-ring-ui.module';
 import { SkillsComponent } from './skills/skills.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [HomeComponent, SkillsComponent],
   imports: [
     CommonModule,
     FloatySpaceRingUiModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   exports: [
     HomeComponent,

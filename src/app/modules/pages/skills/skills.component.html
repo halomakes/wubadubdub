@@ -9,30 +9,51 @@
         pariatur.</p>
       <div class="row">
         <div class="col-4">
-          <h3>Technical</h3>
+          <h3 class="my-4">Specialties</h3>
           <ul>
-            <li class="my-2">thing 1</li>
-            <li class="my-2">two</li>
-            <li class="my-2">tres</li>
-            <li class="my-2">cuatro</li>
+            <li class="language-tag">
+              <img src="assets/svg/icon/csharp.svg" alt="C#">
+              <ul>
+                <li>ASP.NET Core</li>
+                <li>ASP.NET MVC 5</li>
+                <li>Xamarin</li>
+              </ul>
+            </li>
+            <li class="language-tag">
+              <img src="assets/svg/icon/ts.svg" alt="TypeScript">
+              <ul>
+                <li>Angular</li>
+              </ul>
+            </li>
+            <li class="language-tag">
+              <img src="assets/svg/icon/java.svg" alt="Java">
+              <ul>
+                <li>Android</li>
+                <li>Camel</li>
+              </ul>
+            </li>
+            <li class="language-tag">
+              <img src="assets/svg/icon/ps.svg" alt="TypeScript">
+              <ul>
+                <li>Windows PowerShell</li>
+                <li>PowerShell Core</li>
+              </ul>
+            </li>
           </ul>
         </div>
         <div class="col-4">
-          <h3>Interpersonal</h3>
-          <ul>
-            <li class="my-2">thingajig</li>
-            <li class="my-2">asdk</li>
-            <li class="my-2">lkkasd</li>
-            <li class="my-2">aksdkasll</li>
-          </ul>
+          <h3 class="my-4">Other Proficiencies</h3>
+          <div class="flex flex-wrap flex-row language-list">
+            <span *ngFor="let l of languages" [ngStyle]="getStyle(l)" alt="l.description" class="language-list-item"></span>
+          </div>
         </div>
         <div class="col-4">
-          <h3>Something</h3>
-          <ul>
-            <li class="my-2">asdk</li>
-            <li class="my-2">asdkazzxx</li>
-            <li class="my-2">llalsdla</li>
-            <li class="my-2">zzzzzz</li>
+          <h3 class="my-4">Something</h3>
+          <ul class="flex">
+            <li class="language-tag">asdk</li>
+            <li class="language-tag">asdkazzxx</li>
+            <li class="language-tag">llalsdla</li>
+            <li class="language-tag">zzzzzz</li>
           </ul>
         </div>
       </div>
