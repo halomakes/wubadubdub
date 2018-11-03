@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FloatySpaceRingUiModule } from '../floaty-space-ring-ui/floaty-space-ring-ui.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [NavbarComponent],
   imports: [
     CommonModule,
-    FloatySpaceRingUiModule
+    FloatySpaceRingUiModule,
+    RouterModule
   ],
   exports: [
     NavbarComponent
