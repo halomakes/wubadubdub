@@ -23,6 +23,7 @@
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
     "flexboxes": "^0.7.0",
+    "ng-animate-scroll": "^7.0.1",
     "rxjs": "~6.3.3",
     "web-animations-js": "^2.3.1",
     "zone.js": "~0.8.26"
