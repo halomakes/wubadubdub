@@ -1,0 +1,10 @@
+@for $index from 0 to 21{
+    $size: percentage($index/20);
+    $label: $index * 5;
+    .w-#{$label} {
+        width: $size;
+    }
+    .h-#{$label} {
+        height: $size;
+    }
+}
