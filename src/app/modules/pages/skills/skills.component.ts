@@ -15,11 +15,13 @@ export class SkillsComponent implements OnInit {
   constructor(public navbar: NavbarService, private http: HttpClient) { }
   languages: Array<LanguageIcon>;
   specialties: Array<Specialty>;
+  interpersonal: Array<string>;
 
   ngOnInit() {
     this.navbar.makeOpaque();
     this.loadLanguages();
     this.loadSpecialties();
+    this.loadInterpersonal();
   }
 
   private loadLanguages = (): Subscription =>
@@ -29,6 +31,10 @@ export class SkillsComponent implements OnInit {
   private loadSpecialties = (): Subscription =>
     this.http.get<Specialty[]>('assets/data/specialties.json')
       .subscribe(r => this.specialties = r)
+
+  private loadInterpersonal = (): Subscription =>
+    this.http.get<string[]>('assets/data/interpersonal.json')
+      .subscribe(r => this.interpersonal = r)
 
   getStyle = (l: LanguageIcon) => {
     return {
