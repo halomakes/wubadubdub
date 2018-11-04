@@ -11,36 +11,11 @@
         <div class="col-4">
           <h3 class="my-4">Specialties</h3>
           <ul>
-            <li class="language-tag">
-              <img src="assets/svg/icon/csharp.svg" alt="C#" tooltip="C#" placement="left" show-delay="200"
-                tooltip-class="tooltip">
+            <li class="language-tag" *ngFor="let s of specialties">
+              <img [src]="getImageUri(s.fileName)" [alt]="s.description" [tooltip]="s.description" placement="left"
+                show-delay="200" tooltip-class="tooltip">
               <ul>
-                <li>ASP.NET Core</li>
-                <li>ASP.NET MVC 5</li>
-                <li>Xamarin</li>
-              </ul>
-            </li>
-            <li class="language-tag">
-              <img src="assets/svg/icon/ts.svg" alt="TypeScript" tooltip="TypeScript" placement="left" show-delay="200"
-                tooltip-class="tooltip">
-              <ul>
-                <li>Angular</li>
-              </ul>
-            </li>
-            <li class="language-tag">
-              <img src="assets/svg/icon/java.svg" alt="Java" tooltip="Java" placement="left" show-delay="200"
-                tooltip-class="tooltip">
-              <ul>
-                <li>Android</li>
-                <li>Camel</li>
-              </ul>
-            </li>
-            <li class="language-tag">
-              <img src="assets/svg/icon/ps.svg" alt="TypeScript" tooltip="PowerShell" placement="left" show-delay="200"
-                tooltip-class="tooltip">
-              <ul>
-                <li>Windows PowerShell</li>
-                <li>PowerShell Core</li>
+                <li *ngFor="let f of s.frameworks">{{f}}</li>
               </ul>
             </li>
           </ul>
