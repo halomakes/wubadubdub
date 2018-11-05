@@ -16,12 +16,12 @@
             {
                 "url": "https://youtu.be/LfeHgJjAfCk",
                 "text": "See the video on YouTube",
-                "icon": "assets/img/icon/yt.svg"
+                "icon": "assets/svg/icon/yt.svg"
             },
             {
                 "url": "https://photos.app.goo.gl/DB3bpzGs4e7I4KQj2",
                 "text": "See more on Google Photos",
-                "icon": "assets/img/icon/photos.svg"
+                "icon": "assets/svg/icon/photos.svg"
             }
         ],
         "images": []
