@@ -22,11 +22,11 @@ export class HomeComponent implements OnInit {
   }
 
   private loadMainContent = (): Subscription =>
-    this.http.get<ContentBlock>('assets/data/home.json')
+    this.http.get<ContentBlock>('assets/data/home/home.json')
       .subscribe(r => this.mainContent = r)
 
   private loadSecondaryContent = (): Subscription =>
-    this.http.get<ContentBlock>('assets/data/home-secondary.json')
+    this.http.get<ContentBlock>('assets/data/home/home-secondary.json')
       .subscribe(r => this.secondaryContent = r)
 
   @HostListener('window:scroll', ['$event'])

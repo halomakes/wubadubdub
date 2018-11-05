@@ -28,19 +28,19 @@ export class SkillsComponent implements OnInit {
   }
 
   private loadLanguages = (): Subscription =>
-    this.http.get<LanguageIcon[]>('assets/data/languages.json')
+    this.http.get<LanguageIcon[]>('assets/data/skills/languages.json')
       .subscribe(r => this.languages = r)
 
   private loadSpecialties = (): Subscription =>
-    this.http.get<Specialty[]>('assets/data/specialties.json')
+    this.http.get<Specialty[]>('assets/data/skills/specialties.json')
       .subscribe(r => this.specialties = r)
 
   private loadInterpersonal = (): Subscription =>
-    this.http.get<string[]>('assets/data/interpersonal.json')
+    this.http.get<string[]>('assets/data/skills/interpersonal.json')
       .subscribe(r => this.interpersonal = r)
 
   private loadContent = (): Subscription =>
-    this.http.get<ContentBlock>('assets/data/skills.json')
+    this.http.get<ContentBlock>('assets/data/skills/skills.json')
       .subscribe(r => this.content = r)
 
   getStyle = (l: LanguageIcon) => {
