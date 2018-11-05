@@ -36,16 +36,16 @@ export const fadeAnimation = trigger('fadeAnimation', [
 
 export const routerTransition = trigger('routerTransition', [
     transition('* <=> *', [
-        query(':enter, :leave', style({ width: '100%' })
+        query(':enter, :leave', style({ width: '100%', 'background-color': 'white' })
             , { optional: true }),
         group([
             query(':enter', [
-                style({ transform: 'translateX(100%)' }),
-                animate('0.5s ease-in-out', style({ transform: 'translateX(0%)' }))
+                style({ transform: 'translateX(100%)', 'opacity': .5, 'z-index': 20 }),
+                animate('0.5s ease-in-out', style({ transform: 'translateX(0%)', 'opacity': 1 }))
             ], { optional: true }),
             query(':leave', [
-                style({ transform: 'translateX(0%)' }),
-                animate('0.5s ease-in-out', style({ transform: 'translateX(-100%)' }))
+                style({ transform: 'perspective(500px) translateZ(0)', 'opacity': 1 }),
+                animate('0.5s ease-in-out', style({ transform: 'perspective(500px) translateZ(-1000px)', 'opacity': 0 }))
             ], { optional: true }),
         ])
     ])
