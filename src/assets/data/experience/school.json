@@ -1,0 +1,70 @@
+[
+    {
+        "title": "Spring Classes",
+        "date": "2017-01-20T00:00:00.000Z",
+        "location": "Indiana University-Purdue University Indianapolis",
+        "classes": [
+            {
+                "credits": 3,
+                "name": "CIT202",
+                "description": "Networking Fundamentals"
+            },
+            {
+                "credits": 3,
+                "name": "CIT203",
+                "description": "Information Security Fundamentals"
+            },
+            {
+                "credits": 3,
+                "name": "CIT213",
+                "description": "Systems Analysis and Design"
+            },
+            {
+                "credits": 3,
+                "name": "NEWM-N450",
+                "description": "Usability Principles for New Media Interfaces"
+            },
+            {
+                "credits": 3,
+                "name": "OLS371",
+                "description": "Project Management"
+            },
+            {
+                "credits": 1,
+                "name": "TCM250",
+                "description": "Career Planning in Engineering & Technology"
+            }
+        ],
+        "links": [],
+        "images": []
+    },
+    {
+        "title": "Fall Classes",
+        "date": "2017-08-20T00:00:00.000Z",
+        "location": "Indiana University-Purdue University Indianapolis",
+        "classes": [
+            {
+                "credits": 3,
+                "name": "CIT304",
+                "description": "Database Programming"
+            },
+            {
+                "credits": 3,
+                "name": "CIT312",
+                "description": "Advanced Web Site Design"
+            },
+            {
+                "credits": 3,
+                "name": "CIT313",
+                "description": "Commercial Web Site Development"
+            },
+            {
+                "credits": 3,
+                "name": "CIT374",
+                "description": "Systems and Database Analysis"
+            }
+        ],
+        "links": [],
+        "images": []
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Web Developer",
+        "date": "2018-01-06T00:00:00.000Z",
+        "location": "Indiana Farm Bureau Insurance",
+        "description": "I moved to a web developer position on the company’s New Media team. In this position I use ASP.NET MVC (primarily in C#) and work on the company’s Sitefinity CMS implementation.",
+        "links": [],
+        "images": []
+    },
+    {
+        "title": "Internship: Technology Business Services",
+        "date": "2017-05-20T00:00:00.000Z",
+        "location": "Indiana Farm Bureau Insurance",
+        "description": "My part time work with Indiana Farm Bureau Insurance developed into another full-time internship. This year, I worked as a full-fledged employee as I had been with the company long enough to become acclimated to the environment. In addition to standard support, I led the charge on an overhaul of our device deployment process by integrating the Microsoft Deployment toolkit with our Configuration Manager installation, integrating firmware updates and application installations dynamically into the task sequences, and automating several other tasks that previously had to be performed manually. I developed a PowerShell script to check for VPN connection and remap users’ network drives when appropriate and deployed it alongside an upgrade to our Cisco AnyConnect client. I facilitated the removal of all McAfee products from our environment of over 2,000 devices and headed the desktop-end transition to CrowdStrike and Microsoft BitLocker Administration and Monitoring. I established a standard process for deploying software with Configuration Manager’s application model, packaged over 30 pieces of software, and provided documentation and training to other members of the team. I created group policy for Windows Hello and other application-specific needs. I also created task sequences and laid the groundwork for conducting bi-annual operating system upgrades to Windows 10 clients. I also filmed and edited a promotion video for the program as part of a project, which you can view via the link below.",
+        "links": [
+            {
+                "url": "https://youtu.be/LfeHgJjAfCk",
+                "text": "See the video on YouTube",
+                "icon": "assets/img/icon/yt.svg"
+            },
+            {
+                "url": "https://photos.app.goo.gl/DB3bpzGs4e7I4KQj2",
+                "text": "See more on Google Photos",
+                "icon": "assets/img/icon/photos.svg"
+            }
+        ],
+        "images": []
+    }
+]
