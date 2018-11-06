@@ -1,31 +1,34 @@
-<div class="flex pt-8 fader">
+<div class="flex pt-8 pb-8 fader">
   <div class="container">
     <div class="flex justify-center fullpage-push flex-column">
       <h1 class="text-hero mt-8">Experience</h1>
       <div *ngIf="hasLoaded">
-        <div *ngFor="let e of getOrderedEvents()">
-          <h3>{{e.title}}</h3>
-          <small *ngIf="e.location">{{e.location}}</small>
-          <hr />
-          <div *ngIf="e.description">{{e.description}}</div>
-          <table *ngIf="e.classes">
-            <tbody>
-              <tr *ngFor="let c of e.classes">
-                <td>{{c.credits}}</td>
-                <td>{{c.name}}</td>
-                <td>{{c.description}}</td>
-              </tr>
-            </tbody>
-          </table>
-          <div *ngIf="e.images">
-            <img *ngFor="let i of e.images" [src]="i">
+        <div *ngFor="let v of getViewModel()">
+          <div *ngFor="let e of v.experience">
+            <h3>{{e.title}}</h3>
+            <small *ngIf="e.location">{{e.location}}</small>
+            <hr />
+            <div *ngIf="e.description">{{e.description}}</div>
+            <table *ngIf="e.classes">
+              <tbody>
+                <tr *ngFor="let c of e.classes">
+                  <td>{{c.credits}}</td>
+                  <td>{{c.name}}</td>
+                  <td>{{c.description}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div *ngIf="e.images">
+              <img *ngFor="let i of e.images" [src]="i">
+            </div>
+            <div class="flex flex-row justify-end" *ngIf="e.links">
+              <a *ngFor="let l of e.links" [href]="l.url">
+                <img [src]="l.icon" *ngIf="l.icon">
+                {{l.text}}
+              </a>
+            </div>
           </div>
-          <div class="flex flex-row justify-end" *ngIf="e.links">
-            <a *ngFor="let l of e.links" [href]="l.url">
-              <img [src]="l.icon" *ngIf="l.icon">
-              {{l.text}}
-            </a>
-          </div>
+          <h4>{{v.heading}}</h4>
         </div>
       </div>
     </div>

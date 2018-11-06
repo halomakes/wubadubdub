@@ -2,7 +2,7 @@ import { Link } from './link';
 
 export class Experience {
     public title: string;
-    public date: Date;
+    public date: string;
     public location: string;
     public description: string;
     public links: Array<Link>;
