@@ -1,69 +1,70 @@
 @import "../../../../values.scss";
-
 .overlay {
-  overflow: overlay;
-  float: left;
-  position: relative;
-  transition: $animate-interact;
-
-  &:active {
-    transform: scale($depress);
-  }
+    overflow: overlay;
+    float: left;
+    position: relative;
+    transition: $animate-interact;
+    &:active {
+        transform: scale($depress);
+    }
 }
 
 :host {
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
 }
 
 .fsr-btn-outline {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .fsr-btn-clip {
-    clip-path: polygon(
-        $border-thick $border-thick, /*inside top left*/
-        calc(100% - #{$border-thick}) $border-thick, /*inside top right*/
-        calc(100% - #{$border-thick}) calc(100% - #{$border-thick}), /*inside bottom right*/
-        $border-thick calc(100% - #{$border-thick}), /*inside bottom left*/
-        $border-thick $border-thick, /*inside top left*/
-        0% 0%, /*top left*/
-        0% 100%, /*bottom left*/
-        100% 100%, /*bottom right*/
-        100% 0%, /*top right*/
-        0% 0%, /*top left*/
-        $border-thick $border-thick /*inside top left*/
-        )
+    clip-path: polygon( $border-thick $border-thick, /*inside top left*/
+    calc(100% - #{$border-thick}) $border-thick, /*inside top right*/
+    calc(100% - #{$border-thick}) calc(100% - #{$border-thick}), /*inside bottom right*/
+    $border-thick calc(100% - #{$border-thick}), /*inside bottom left*/
+    $border-thick $border-thick, /*inside top left*/
+    0% 0%, /*top left*/
+    0% 100%, /*bottom left*/
+    100% 100%, /*bottom right*/
+    100% 0%, /*top right*/
+    0% 0%, /*top left*/
+    $border-thick $border-thick/*inside top left*/
+    )
 }
 
 .fsr-button {
-  font-family: $font;
-  color: $white;
-  padding-left: $md;
-  padding-right: $md;
-  padding-top: $sm;
-  padding-bottom: $sm;
-  text-decoration: none;
-  transition: $animate-interact;
-  display: inline-block;
-  user-select: none;
-  position: relative;
-  margin: $border-thick;
+    font-family: $font;
+    color: $white;
+    padding-left: $md;
+    padding-right: $md;
+    padding-top: $sm;
+    padding-bottom: $sm;
+    text-decoration: none;
+    transition: $animate-interact;
+    display: inline-block;
+    user-select: none;
+    position: relative;
+    margin: $border-thick;
 }
 
 .fsr-button-lg {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
 }
 
 .glow {
-  box-shadow: $glow;
+    box-shadow: $glow;
 }
 
 .dim {
-  color: $dim;
+    color: $dim;
+}
+
+.inactive {
+    opacity: .3;
 }

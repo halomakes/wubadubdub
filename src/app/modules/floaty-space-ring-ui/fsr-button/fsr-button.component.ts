@@ -12,6 +12,7 @@ export class FsrButtonComponent {
   @Input() fixed = false;
   @Input() href: string;
   @Input() target: '_blank';
+  @Input() inactive = false;
   private gradient: { x: number, y: number } = { x: 0, y: 0 };
   private lastScrollPos = 0;
   darkText: boolean;

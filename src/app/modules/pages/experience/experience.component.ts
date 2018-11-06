@@ -32,10 +32,12 @@ export class ExperienceComponent implements OnInit {
   ngOnInit() {
     this.navbar.makeOpaque();
     this.loadAllData().subscribe(r => {
-      this.model = this.getViewModel();
+      this.updateViewModel();
       this.hasLoaded = true;
     });
   }
+
+  private updateViewModel = (): void => { this.model = this.getViewModel(); };
 
   private loadEvents = (): Observable<Experience[]> =>
     this.http.get<Experience[]>(`${this.baseUrl}events.json`)
@@ -52,7 +54,7 @@ export class ExperienceComponent implements OnInit {
   private loadAllData = () =>
     forkJoin([this.loadEvents(), this.loadWork(), this.loadSchool()])
 
-  getOrderedEvents = (): Array<Experience | Education> =>
+  private getOrderedEvents = (): Array<Experience | Education> =>
     this.getEventsToDisplay().sort(this.sortByDateDescending)
 
   private getEventsToDisplay = (): Array<Experience | Education> => {
@@ -75,7 +77,7 @@ export class ExperienceComponent implements OnInit {
       const events = allEvents.filter(e => new Date(e.date) > currentDate && new Date(e.date) <= nextDate);
       if (events.length) {
         result.push(<TimelineViewModel>{
-          startDate: currentDate,
+          startDate: new Date(currentDate),
           heading: this.getIndicator(currentDate),
           experience: events
         });
@@ -91,11 +93,14 @@ export class ExperienceComponent implements OnInit {
         heading: 'Now'
       });
       result.reverse();
-      const last = result[result.length - 2];
-      result.push(<TimelineViewModel>{
-        startDate: last.startDate,
-        heading: last.startDate.getFullYear().toString()
-      });
+      const last = result[result.length - 1];
+      console.log(result, last);
+      if (last.startDate.getMonth() !== 0) {
+        result.push(<TimelineViewModel>{
+          startDate: last.startDate,
+          heading: last.startDate.getFullYear().toString()
+        });
+      }
     }
     return result;
   }
@@ -103,12 +108,11 @@ export class ExperienceComponent implements OnInit {
   private getDatesAsNumbers = (): Array<number> => this.getEventsToDisplay()
     .map(e => new Date(e.date).getTime())
 
-  getMinimumDate = (): Date => new Date(Math.min.apply(null, this.getDatesAsNumbers()));
+  private getMinimumDate = (): Date => new Date(Math.min.apply(null, this.getDatesAsNumbers()));
 
-  getMaximumDate = (): Date => new Date(Math.max.apply(null, this.getDatesAsNumbers()));
+  private getMaximumDate = (): Date => new Date(Math.max.apply(null, this.getDatesAsNumbers()));
 
-  sortByDateDescending = (a, b) => new Date(a.date).getDate() - new Date(b.date).getDate();
-  sortByDateAscending = (a, b) => -this.sortByDateDescending(a, b);
+  private sortByDateDescending = (a, b) => new Date(a.date).getDate() - new Date(b.date).getDate();
 
   private getBlankMarker = (currentDate: Date): TimelineViewModel => <TimelineViewModel>{
     startDate: currentDate,
@@ -117,4 +121,7 @@ export class ExperienceComponent implements OnInit {
 
   private getIndicator = (date: Date): string => date.getMonth() === 0 ? date.getFullYear().toString() : monthNames[date.getMonth()];
 
+  toggleSchool = (): void => { this.showSchool = !this.showSchool; this.updateViewModel(); };
+  toggleWork = (): void => { this.showWork = !this.showWork; this.updateViewModel(); };
+  toggleOther = (): void => { this.showOther = !this.showOther; this.updateViewModel(); };
 }

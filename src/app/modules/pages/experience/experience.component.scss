@@ -1,3 +1,4 @@
+@import '../../../../values.scss';
 .wmax-100 {
     max-width: 100%;
 }
@@ -5,4 +6,25 @@
 .btn-icon {
     height: 1.3em;
     max-width: 1.3em;
+}
+
+.timeline-rule {
+    color: $primary;
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    div {
+        height: 1px;
+        width: 100%;
+        background-color: transparentize($primary, .5);
+    }
+    h4 {
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+}
+
+.exp-image {
+    min-width: 8rem;
 }
