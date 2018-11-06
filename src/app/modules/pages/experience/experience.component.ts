@@ -5,6 +5,7 @@ import { Experience } from './experience';
 import { Education } from './education';
 import { map } from 'rxjs/operators';
 import { TimelineViewModel } from './timeline-viewmodel';
+import { NavbarService } from '../../components/navbar.service';
 
 const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
@@ -24,11 +25,16 @@ export class ExperienceComponent implements OnInit {
   showOther = true;
 
   hasLoaded = false;
+  model: Array<TimelineViewModel>;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, public navbar: NavbarService) { }
 
   ngOnInit() {
-    this.loadAllData().subscribe(r => this.hasLoaded = true);
+    this.navbar.makeOpaque();
+    this.loadAllData().subscribe(r => {
+      this.model = this.getViewModel();
+      this.hasLoaded = true;
+    });
   }
 
   private loadEvents = (): Observable<Experience[]> =>
@@ -57,16 +63,16 @@ export class ExperienceComponent implements OnInit {
     return base;
   }
 
-  getViewModel = (): Array<TimelineViewModel> => {
+  private getViewModel = (): Array<TimelineViewModel> => {
     const result: Array<TimelineViewModel> = [];
     const minDate = this.getMinimumDate();
-    const currentDate = new Date(minDate.getFullYear(), minDate.getMonth(), 1);
+    const currentDate = new Date(minDate.getFullYear(), minDate.getMonth() - 1, 1);
     const maxDate = this.getMaximumDate();
     maxDate.setMonth(maxDate.getMonth() + 1);
-    let prevDate = currentDate;
-    prevDate.setMonth(currentDate.getMonth() - 1);
+    const allEvents = this.getEventsToDisplay();
     while (currentDate < maxDate) {
-      const events = this.getEventsToDisplay().filter(e => new Date(e.date) > prevDate && new Date(e.date) <= currentDate);
+      const nextDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1);
+      const events = allEvents.filter(e => new Date(e.date) > currentDate && new Date(e.date) <= nextDate);
       if (events.length) {
         result.push(<TimelineViewModel>{
           startDate: currentDate,
@@ -76,7 +82,6 @@ export class ExperienceComponent implements OnInit {
       } else if (currentDate.getMonth() === 0) {
         result.push(this.getBlankMarker(currentDate));
       }
-      prevDate = new Date(currentDate);
       currentDate.setMonth(currentDate.getMonth() + 1);
     }
 
@@ -95,11 +100,12 @@ export class ExperienceComponent implements OnInit {
     return result;
   }
 
-  getMinimumDate = (): Date => new Date(this.getEventsToDisplay()
-    .sort(this.sortByDateAscending)[0].date)
+  private getDatesAsNumbers = (): Array<number> => this.getEventsToDisplay()
+    .map(e => new Date(e.date).getTime())
 
-  getMaximumDate = (): Date => new Date(this.getEventsToDisplay()
-    .sort(this.sortByDateDescending)[0].date)
+  getMinimumDate = (): Date => new Date(Math.min.apply(null, this.getDatesAsNumbers()));
+
+  getMaximumDate = (): Date => new Date(Math.max.apply(null, this.getDatesAsNumbers()));
 
   sortByDateDescending = (a, b) => new Date(a.date).getDate() - new Date(b.date).getDate();
   sortByDateAscending = (a, b) => -this.sortByDateDescending(a, b);

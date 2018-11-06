@@ -3,7 +3,7 @@
     <div class="flex justify-center fullpage-push flex-column">
       <h1 class="text-hero mt-8">Experience</h1>
       <div *ngIf="hasLoaded">
-        <div *ngFor="let v of getViewModel()">
+        <div *ngFor="let v of model">
           <div *ngFor="let e of v.experience">
             <h3>{{e.title}}</h3>
             <small *ngIf="e.location">{{e.location}}</small>
@@ -18,14 +18,18 @@
                 </tr>
               </tbody>
             </table>
-            <div *ngIf="e.images">
-              <img *ngFor="let i of e.images" [src]="i">
+            <div *ngIf="e.images" class="flex flex-row justify-end">
+              <div class="flex-1 mx-1 my-2" *ngFor="let i of e.images">
+                <img class="w-100" [src]="i">
+              </div>
             </div>
             <div class="flex flex-row justify-end" *ngIf="e.links">
-              <a *ngFor="let l of e.links" [href]="l.url">
-                <img [src]="l.icon" *ngIf="l.icon">
-                {{l.text}}
-              </a>
+              <fsr-button *ngFor="let l of e.links" [href]="l.url" color="grey" [solid]="false" class="mx-1 my-2">
+                <span class="flex items-center">
+                  <img [src]="l.icon" *ngIf="l.icon" class="btn-icon mr-2">
+                  {{l.text}}
+                </span>
+              </fsr-button>
             </div>
           </div>
           <h4>{{v.heading}}</h4>
