@@ -1,4 +1,4 @@
-<div class="overlay" [class.glow]="solid" (click)="onClick()">
+<div class="overlay" (click)="onClick()" [ngStyle]="getGlow()">
   <span class="fsr-tile-outline" [ngStyle]="getBorderGradient()"></span>
   <div class="fsr-tile" [ngStyle]="getBackgroundGradient()">
     <ng-content></ng-content>

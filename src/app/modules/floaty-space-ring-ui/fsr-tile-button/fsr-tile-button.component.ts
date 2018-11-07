@@ -59,4 +59,8 @@ export class FsrTileButtonComponent implements OnInit {
     // tslint:disable-next-line:max-line-length
     'background': `radial-gradient(circle at ${this.origin.x}px ${this.origin.y}px, rgb(${this.highlight.join()}) 0%, rgb(${this.light.join()}) 20%, rgb(${this.dark.join()}) 100%)`
   }
+
+  getGlow = () => <any>{
+    'box-shadow': `0 0 .8rem rgba(${this.dark.join()}, .5)`
+  }
 }
