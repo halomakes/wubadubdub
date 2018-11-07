@@ -1,19 +1,30 @@
 [
     {
-        "title": "Nominated for Intern of the Year",
-        "date": "2017-11-15T00:00:00.000Z",
-        "location": "Indiana INTERNnet",
-        "description": "I was nominated by Indiana Farm Bureau Insurance for intern of the year through Indiana INTERNnet.",
-        "links": [],
-        "images": []
-    },
-    {
         "title": "IFBI Hackathon",
-        "date": "2017-07-21T00:00:00.000Z",
-        "location": "Indiana Farm Bureau Insurance's First Hackathon",
+        "date": "2017-07-20T00:00:00.000Z",
+        "location": "IIndiana Farm Bureau Insurance's First Hackathon",
         "description": "I participated in the company’s first-ever hackathon. There was an insurance theme and 8 teams participated. Our team won second place for our simplified quoting concept that uses existing data from within the company and other sources to deliver demographics-driven quotes to potential customers while asking far less questions than would normally be required.",
         "links": [],
-        "images": []
+        "images": [
+            "assets/img/experience/hacka.jpg"
+        ]
+    },
+    {
+        "title": "Nominated for Intern of the Year",
+        "date": "2018-02-06T00:00:00.000Z",
+        "location": "Indiana INTERNnet",
+        "description": "I was nominated by Indiana Farm Bureau Insurance for intern of the year through Indiana INTERNnet.",
+        "links": [
+            {
+                "url": "https://www.linkedin.com/feed/update/urn:li:activity:6367116484824567808",
+                "text": "View Post on LinkedIn",
+                "icon": "assets/svg/icon/linkedin.svg"
+            }
+        ],
+        "images": [
+            "assets/img/experience/internaward1.jpg",
+            "assets/img/experience/internaward2.jpg"
+        ]
     },
     {
         "title": "Mission Trip: South Chicago",
@@ -37,5 +48,13 @@
             "assets/img/experience/rose2.jpg",
             "assets/img/experience/rose1.jpg"
         ]
+    },
+    {
+        "title": "Computer Graphics",
+        "date": "2016-01-20T00:00:00.000Z",
+        "location": "The Net - Connection Pointe Christian Church",
+        "description": "The Net is a young adults group that meets every other Sunday. I assist with set-up, create visual elements and loops, and manage the on-screen lyrics and notes during the service.",
+        "links": [],
+        "images": []
     }
 ]

@@ -66,5 +66,162 @@
         ],
         "links": [],
         "images": []
+    },
+    {
+        "title": "Graduated",
+        "date": "2018-05-21T00:00:00.000Z",
+        "location": "Indiana University-Purdue University Indianapolis",
+        "description": "I earned by Bachelor of Science from Purdue University with honors.  My major was Computer Information Technology with a concentration in web development.",
+        "classes": [],
+        "links": [],
+        "images": []
+    },
+    {
+        "title": "Spring Classes",
+        "date": "2018-01-20T00:00:00.000Z",
+        "location": "Indiana University-Purdue University Indianapolis",
+        "classes": [
+            {
+                "credits": 3,
+                "name": "CIT220",
+                "description": "Quantitative Analysis"
+            },
+            {
+                "credits": 3,
+                "name": "CIT305",
+                "description": "Android Development"
+            },
+            {
+                "credits": 3,
+                "name": "CGT356",
+                "description": "User Interface Design"
+            },
+            {
+                "credits": 3,
+                "name": "CIT499",
+                "description": "Hybrid Mobile App Development"
+            }
+        ],
+        "links": [],
+        "images": []
+    },
+    {
+        "title": "Spring 2017 Dean's List",
+        "date": "2017-05-20T00:00:00.000Z",
+        "location": "Indiana University-Purdue University Indianapolis",
+        "description": "I was named to the Purdue School of Engineering and Technology Dean’s List for the 2017 spring semester.",
+        "classes": [],
+        "links": [],
+        "images": []
+    },
+    {
+        "title": "Fall 2017 Dean's List",
+        "date": "2017-12-04T00:00:00.000Z",
+        "location": "Indiana University-Purdue University Indianapolis",
+        "description": "I was named to the Purdue School of Engineering and Technology Dean’s List for the 2017 fall semester.",
+        "classes": [],
+        "links": [],
+        "images": []
+    },
+    {
+        "title": "Spring 2018 Dean's List",
+        "date": "2018-05-04T00:00:00.000Z",
+        "location": "Indiana University-Purdue University Indianapolis",
+        "description": "I was named to the Purdue School of Engineering and Technology Dean’s List for the 2018 spring semester.",
+        "classes": [],
+        "links": [],
+        "images": []
+    },
+    {
+        "title": "Fall Classes",
+        "date": "2016-08-20T00:00:00.000Z",
+        "location": "Indiana University-Purdue University Indianapolis",
+        "classes": [
+            {
+                "credits": 3,
+                "name": "CIT215",
+                "description": "Web Programming (Javascript, PHP)"
+            },
+            {
+                "credits": 3,
+                "name": "CIT214",
+                "description": "Intro to Data Management"
+            },
+            {
+                "credits": 3,
+                "name": "CIT207",
+                "description": "Data Communications"
+            },
+            {
+                "credits": 3,
+                "name": "CGT116",
+                "description": "Geometric Modeling/Visual Communication"
+            },
+            {
+                "credits": 3,
+                "name": "HER-E101",
+                "description": "Beginning Drawing I"
+            },
+            {
+                "credits": 3,
+                "name": "OLS263",
+                "description": "Ethical Decisions in Leadership"
+            }
+        ],
+        "links": [],
+        "images": []
+    },
+    {
+        "title": "Summer Classes",
+        "date": "2016-05-28T00:00:00.000Z",
+        "location": "Indiana University-Purdue University Indianapolis",
+        "classes": [
+            {
+                "credits": 3,
+                "name": "CIT176",
+                "description": "Information Technology Architectures"
+            },
+            {
+                "credits": 3,
+                "name": "TECH300",
+                "description": "Career Enrichment Internship"
+            }
+        ],
+        "links": [],
+        "images": []
+    },
+    {
+        "title": "Spring Classes",
+        "date": "2016-01-20T00:00:00.000Z",
+        "location": "Indiana University-Purdue University Indianapolis",
+        "classes": [
+            {
+                "credits": 3,
+                "name": "CIT112",
+                "description": "Information Technology Fundamentals"
+            },
+            {
+                "credits": 3,
+                "name": "CIT212",
+                "description": "Web Site Design"
+            },
+            {
+                "credits": 3,
+                "name": "OLS252",
+                "description": "Human Behavior in Organizations"
+            },
+            {
+                "credits": 4,
+                "name": "SPAN-S131",
+                "description": "First-Year Spanish"
+            },
+            {
+                "credits": 3,
+                "name": "TCM320",
+                "description": "Written Communication in Science and Industry"
+            }
+        ],
+        "links": [],
+        "images": []
     }
 ]
