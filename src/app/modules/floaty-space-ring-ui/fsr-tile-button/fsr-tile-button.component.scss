@@ -1,0 +1,54 @@
+@import "../../../../values.scss";
+$side: 6rem;
+.overlay {
+    overflow: overlay;
+    position: relative;
+    float: left;
+    transition: $animate-interact;
+    &:active {
+        transform: scale($depress);
+    }
+}
+
+:host {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.fsr-tile-outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.fsr-tile-clip {
+    clip-path: polygon( $border-thick $border-thick, /*inside top left*/
+    calc(100% - #{$border-thick}) $border-thick, /*inside top right*/
+    calc(100% - #{$border-thick}) calc(100% - #{$border-thick}), /*inside bottom right*/
+    $border-thick calc(100% - #{$border-thick}), /*inside bottom left*/
+    $border-thick $border-thick, /*inside top left*/
+    0% 0%, /*top left*/
+    0% 100%, /*bottom left*/
+    100% 100%, /*bottom right*/
+    100% 0%, /*top right*/
+    0% 0%, /*top left*/
+    $border-thick $border-thick/*inside top left*/
+    )
+}
+
+.fsr-tile {
+    height: $side;
+    width: $side;
+    color: $white;
+    text-decoration: none;
+    transition: $animate-interact;
+    display: flex;
+    user-select: none;
+    position: relative;
+    margin: $border-thick;
+    justify-content: center;
+    align-items: center;
+}

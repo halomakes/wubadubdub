@@ -1,6 +1,7 @@
 import { Component, Input, HostListener, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'fsr-button',
   templateUrl: './fsr-button.component.html',
   styleUrls: ['./fsr-button.component.scss']
