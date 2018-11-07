@@ -9,6 +9,11 @@
         <fsr-button color="grey" (click)="toggleOther()" [solid]="false" [inactive]="!showOther">Other</fsr-button>
       </div>
       <div *ngIf="hasLoaded">
+        <div *ngIf="!model.length" class="justify-center flex flex-row py-10 text-dim">
+          <span>
+            There is no content matching the selected filter.
+          </span>
+        </div>
         <div *ngFor="let v of model">
           <div *ngFor="let e of v.experience" class="flex flex-column my-10 items-center">
             <h3>{{e.title}}</h3>
