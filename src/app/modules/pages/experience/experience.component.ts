@@ -94,7 +94,6 @@ export class ExperienceComponent implements OnInit {
       });
       result.reverse();
       const last = result[result.length - 1];
-      console.log(result, last);
       if (last.startDate.getMonth() !== 0) {
         result.push(<TimelineViewModel>{
           startDate: last.startDate,
