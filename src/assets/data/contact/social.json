@@ -1,0 +1,132 @@
+[
+    {
+        "name": "Email",
+        "color": [
+            228,
+            129,
+            5
+        ],
+        "icon": "assets/svg/mono/email.svg",
+        "link": "mailto:alex@halomademeapc.com"
+    },
+    {
+        "name": "Facebook",
+        "color": [
+            81,
+            96,
+            157
+        ],
+        "icon": "assets/svg/mono/facebook.svg",
+        "link": "https://www.facebook.com/halomademeapc"
+    },
+    {
+        "name": "Twitter",
+        "color": [
+            95,
+            169,
+            221
+        ],
+        "icon": "assets/svg/mono/twitter.svg",
+        "link": "https://twitter.com/halomademeapc"
+    },
+    {
+        "name": "Instagram",
+        "color": [
+            219,
+            48,
+            117
+        ],
+        "icon": "assets/svg/mono/instagram.svg",
+        "link": "https://www.instagram.com/halomademeapc/"
+    },
+    {
+        "name": "Google+",
+        "color": [
+            223,
+            79,
+            63
+        ],
+        "icon": "assets/svg/mono/gplus.svg",
+        "link": "https://plus.google.com/+AlexGriffithhalomademeapc"
+    },
+    {
+        "name": "GitHub",
+        "color": [
+            94,
+            34,
+            127
+        ],
+        "icon": "assets/svg/mono/github.svg",
+        "link": "https://github.com/halomademeapc"
+    },
+    {
+        "name": "YouTube",
+        "color": [
+            229,
+            46,
+            41
+        ],
+        "icon": "assets/svg/mono/youtube.svg",
+        "link": "https://www.youtube.com/user/halomademeapc"
+    },
+    {
+        "name": "PlayStation",
+        "color": [
+            1,
+            98,
+            184
+        ],
+        "icon": "assets/svg/mono/psn.svg",
+        "link": "https://my.playstation.com/halomademeapc"
+    },
+    {
+        "name": "Steam",
+        "color": [
+            54,
+            54,
+            54
+        ],
+        "icon": "assets/svg/mono/steam.svg",
+        "link": "https://steamcommunity.com/id/halomademeapc"
+    },
+    {
+        "name": "Xbox Live",
+        "color": [
+            126,
+            185,
+            0
+        ],
+        "icon": "assets/svg/mono/xbox.svg",
+        "link": "http://live.xbox.com/en-US/Profile?gamertag=halomademeapc"
+    },
+    {
+        "name": "MyAnimeList",
+        "color": [
+            37,
+            84,
+            163
+        ],
+        "icon": "assets/svg/mono/mal.svg",
+        "link": "https://myanimelist.net/profile/halomademeapc"
+    },
+    {
+        "name": "DeviantArt",
+        "color": [
+            4,
+            204,
+            71
+        ],
+        "icon": "assets/svg/mono/da.svg",
+        "link": "https://www.deviantart.com/halomademeapc"
+    },
+    {
+        "name": "last.fm",
+        "color": [
+            206,
+            0,
+            0
+        ],
+        "icon": "assets/svg/mono/lastfm.svg",
+        "link": "https://www.deviantart.com/halomademeapc"
+    }
+]

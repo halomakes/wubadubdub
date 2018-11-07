@@ -26,4 +26,10 @@ $sides: (top, bottom, left, right);
         padding-left: #{$space}px !important;
         padding-right: #{$space}px !important;
     }
+    .m-#{$i} {
+        margin: #{$space}px !important;
+    }
+    .p-#{$i} {
+        padding: #{$space}px !important;
+    }
 }

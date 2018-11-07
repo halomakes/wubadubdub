@@ -1,9 +1,11 @@
 <div class="flex pt-8 fader">
   <div class="container">
     <div class="flex justify-center fullpage-push flex-column">
-      <h1 class="text-hero mt-8">Get a hold of me</h1>
-      <div>
-        <fsr-tile [color]="[37,84,163]">test</fsr-tile>
+      <h1 class="text-hero mt-8">Connect with me</h1>
+      <div class="my-3 flex flex-row flex-wrap">
+        <fsr-tile [color]="t.color" [href]="t.link" *ngFor="let t of tiles" class="m-1">
+          <img class="tile-icon" [src]="t.icon" [alt]="t.name">
+        </fsr-tile>
       </div>
     </div>
   </div>
