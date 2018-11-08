@@ -40,7 +40,7 @@ export const routerTransition = trigger('routerTransition', [
             , { optional: true }),
         group([
             query(':enter', [
-                style({ transform: 'translateX(100%)', 'opacity': .5, 'z-index': 20 }),
+                style({ transform: 'translateX(100%)', 'opacity': .5, 'z-index': 20, 'position': 'fixed' }),
                 animate('0.5s ease-in-out', style({ transform: 'translateX(0%)', 'opacity': 1 }))
             ], { optional: true }),
             query(':leave', [

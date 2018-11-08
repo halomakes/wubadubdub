@@ -9,4 +9,6 @@ import { routerTransition } from './animations';
 })
 export class AppComponent {
   title = 'wubadubdub';
+
+  animationDone = ($event: any): void => window.scrollTo(0, 0);
 }
