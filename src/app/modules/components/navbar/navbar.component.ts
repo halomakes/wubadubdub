@@ -2,37 +2,28 @@ import { Component, OnInit } from '@angular/core';
 import { NavbarService } from '../navbar.service';
 import { NgAnimateScrollService } from 'ng-animate-scroll';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { NavLink } from './nav-link';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
+  links: Array<any>;
 
   constructor(public navbar: NavbarService,
     private scroll: NgAnimateScrollService,
-    private route: ActivatedRoute,
-    private router: Router) { }
+    private router: Router,
+    private http: HttpClient) { }
 
-  links = [
-    {
-      routerLink: ['/'],
-      label: 'Home'
-    }, {
-      routerLink: ['/skills'],
-      label: 'Skills'
-    }, {
-      routerLink: ['/experience'],
-      label: 'Experience'
-    }, {
-      routerLink: ['/creations'],
-      label: 'Creations'
-    }, {
-      routerLink: ['/contact'],
-      label: 'Contact'
-    }
-  ];
+  ngOnInit() {
+    this.loadLinks();
+  }
+
+  loadLinks = (): Subscription => this.http.get<NavLink[]>('assets/data/navigation/links.json').subscribe(r => this.links = r);
 
   scrollToTop = (routerLink: Array<any>): void => {
     if (this.isActive(routerLink)) {

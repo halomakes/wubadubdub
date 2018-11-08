@@ -1,0 +1,32 @@
+[
+    {
+        "routerLink": [
+            "/"
+        ],
+        "label": "Home"
+    },
+    {
+        "routerLink": [
+            "/skills"
+        ],
+        "label": "Skills"
+    },
+    {
+        "routerLink": [
+            "/experience"
+        ],
+        "label": "Experience"
+    },
+    {
+        "routerLink": [
+            "/creations"
+        ],
+        "label": "Creations"
+    },
+    {
+        "routerLink": [
+            "/contact"
+        ],
+        "label": "Contact"
+    }
+]
