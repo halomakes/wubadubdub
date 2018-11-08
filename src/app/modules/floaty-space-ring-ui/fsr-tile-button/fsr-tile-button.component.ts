@@ -11,6 +11,7 @@ export class FsrTileButtonComponent implements OnInit {
   @Input() target: '_blank';
   @Input() fixed = false;
   @Input() color: Array<number>;
+  @Input() mega = false;
   private light: Array<number>;
   private highlight: Array<number>;
   private primary: Array<number>;

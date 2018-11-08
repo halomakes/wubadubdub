@@ -1,4 +1,4 @@
 export class NavLink {
     public label: string;
-    public routerLink: Array<any>
+    public routerLink: Array<any>;
 }

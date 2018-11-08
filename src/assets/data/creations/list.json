@@ -1,0 +1,41 @@
+[
+    {
+        "name": "DeskDex",
+        "color": [
+            180,
+            47,
+            38
+        ],
+        "icon": "assets/svg/creation/deskdex.svg",
+        "routerLink": [
+            "/creations/deskdex"
+        ],
+        "description": "employee locator"
+    },
+    {
+        "name": "phÿnd",
+        "color": [
+            66,
+            133,
+            244
+        ],
+        "icon": "assets/svg/creation/phynd.svg",
+        "routerLink": [
+            "/creations/phynd"
+        ],
+        "description": "learning tic·tac·toe"
+    },
+    {
+        "name": "PrimeHTML5",
+        "color": [
+            237,
+            30,
+            121
+        ],
+        "icon": "assets/svg/creation/prime.svg",
+        "routerLink": [
+            "/creations/prime"
+        ],
+        "description": "a (very) basic benchmark"
+    }
+]
