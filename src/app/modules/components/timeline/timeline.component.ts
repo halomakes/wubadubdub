@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TimelineViewModel } from './timeline-viewmodel';
 
 @Component({
@@ -6,12 +6,8 @@ import { TimelineViewModel } from './timeline-viewmodel';
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.scss']
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent {
   @Input() events: TimelineViewModel;
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }

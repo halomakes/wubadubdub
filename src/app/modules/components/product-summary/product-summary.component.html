@@ -1,0 +1,21 @@
+    <div class="w-100 my-5 flex flex-row flex-wrap justify-center">
+      <div class="flex flex-row flex-wrap justify-center items-center w-80 my-3" [ngStyle]="getColor(model)">
+        <img class="mega-tile-icon" [alt]="model.name" [src]="model.icon">
+        <span class="ml-4 my-3">{{model.description}}</span>
+      </div>
+      <div class="flex flex-column items-center">
+        <span class="col-8 mt-6 mb-4 justify">{{model.blurb}}</span>
+          <div class="flex flex-column items-center mb-3">
+            <span class="font-heavy my-1">Technology Used</span>
+            <span class="my-1" *ngFor="let t of model.tech">{{t}}</span>
+          </div>
+        <div class="flex flex-row justify-center" *ngIf="model.links.length">
+          <fsr-tile [color]="model.color" [mega]="true" *ngFor="let l of model.links" [href]="l.url" class="mx-1 my-2">
+            <span class="flex items-center text-white px-3 py-2">
+              <img [src]="l.icon" *ngIf="l.icon" class="btn-icon mr-2">
+              <span class="no-wrap">{{l.text}}</span>
+            </span>
+          </fsr-tile>
+        </div>
+      </div>
+    </div>

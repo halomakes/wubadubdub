@@ -1,7 +1,7 @@
-import { Tile } from '../tile';
+import { Tile } from '../../pages/tile';
 import { Link } from 'src/app/link';
 
-export class Creation extends Tile {
+export class ProductSummaryViewModel extends Tile {
     routerLink: Array<any>;
     description: string;
     blurb: string;
