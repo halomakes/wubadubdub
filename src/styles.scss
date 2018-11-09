@@ -48,3 +48,12 @@ body {
     max-height: 4rem;
     display: block;
 }
+
+.btn-icon {
+    height: 1.3em;
+    max-width: 1.3em;
+}
+
+.animate-all-slow {
+    transition: all 1s ease;
+}

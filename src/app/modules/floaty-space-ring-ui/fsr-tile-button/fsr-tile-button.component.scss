@@ -58,6 +58,6 @@ $icoSide: 3rem;
     float: none;
     .fsr-tile {
         width: calc(100% - 2*#{$border-thick});
-        height: 8rem;
+        height: auto;
     }
 }

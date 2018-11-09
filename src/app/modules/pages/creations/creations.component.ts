@@ -23,4 +23,8 @@ export class CreationsComponent implements OnInit {
   loadList = (): Subscription =>
     this.http.get<Creation[]>('assets/data/creations/list.json')
       .subscribe(r => this.creations = r)
+
+  getColor = (c: Creation) => <any>{
+    'color': `rgb(${c.color.join()})`
+  }
 }
