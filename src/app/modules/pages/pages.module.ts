@@ -9,6 +9,7 @@ import { TooltipModule } from 'ng2-tooltip-directive';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 import { CreationsComponent } from './creations/creations.component';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [HomeComponent, SkillsComponent, ExperienceComponent, ContactComponent, CreationsComponent],
@@ -17,7 +18,8 @@ import { CreationsComponent } from './creations/creations.component';
     FloatySpaceRingUiModule,
     RouterModule,
     HttpClientModule,
-    TooltipModule
+    TooltipModule,
+    ComponentsModule
   ],
   exports: [
     HomeComponent,

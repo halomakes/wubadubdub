@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Experience } from './experience';
 import { Education } from './education';
 import { map } from 'rxjs/operators';
-import { TimelineViewModel } from './timeline-viewmodel';
+import { TimelineViewModel } from '../../components/timeline/timeline-viewmodel';
 import { NavbarService } from '../../components/navbar.service';
 
 const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];

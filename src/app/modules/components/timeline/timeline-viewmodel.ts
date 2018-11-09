@@ -1,4 +1,4 @@
-import { Experience } from './experience';
+import { Experience } from '../../pages/experience/experience';
 
 export class TimelineViewModel {
     heading: string;
