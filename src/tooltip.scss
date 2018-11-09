@@ -1,0 +1,14 @@
+.tooltip {
+  border-radius: 0 !important;
+  background-color: $dim !important;
+  box-shadow: none !important;
+  pointer-events: none;
+}
+
+.tooltip.tooltip-left::after {
+  border-left-color: $dim !important;
+}
+
+.tooltip.tooltip-top::after {
+  border-top-color: $dim !important;
+}

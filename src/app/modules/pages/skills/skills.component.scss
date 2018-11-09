@@ -1,0 +1,33 @@
+.language-tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  img {
+    width: 3em;
+    max-height: 5em;
+    margin-right: 1em;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
+.language-list-item {
+  width: 3em;
+  height: 3em;
+  display: block;
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+
+.language-list {
+  margin: -10px;
+}

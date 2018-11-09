@@ -1,0 +1,6 @@
+<div class="overlay" (click)="onClick()" [ngStyle]="getGlow()" [class.fsr-tile-mega]="mega">
+  <span class="fsr-tile-outline" [ngStyle]="getBorderGradient()"></span>
+  <div class="fsr-tile" [ngStyle]="getBackgroundGradient()">
+    <ng-content></ng-content>
+  </div>
+</div>

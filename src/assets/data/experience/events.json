@@ -1,0 +1,75 @@
+[
+    {
+        "title": "IFBI Hackathon",
+        "date": "2018-07-20T00:00:00.000Z",
+        "location": "Indiana Farm Bureau Insurance's Second Annual Hackathon",
+        "description": "I participated in the company's IoT-themed hackathon.  Our team demonstrated the practical applications of home sensors to the insurance industry and built a smart mirror, including a made-from-scratch frontend UI for it.",
+        "links": [
+            {
+                "url": "https://www.linkedin.com/feed/update/urn:li:activity:6428265978970271744",
+                "text": "View Post on LinkedIn",
+                "icon": "assets/svg/icon/linkedin.svg"
+            }
+        ],
+        "images": [
+            "assets/img/experience/hack2thistimeitspersonal.jpg"
+        ]
+    },
+    {
+        "title": "IFBI Hackathon",
+        "date": "2017-07-20T00:00:00.000Z",
+        "location": "Indiana Farm Bureau Insurance's First Hackathon",
+        "description": "I participated in the company’s first-ever hackathon. There was an insurance theme and 8 teams participated. Our team won second place for our simplified quoting concept that uses existing data from within the company and other sources to deliver demographics-driven quotes to potential customers while asking far less questions than would normally be required.",
+        "links": [],
+        "images": [
+            "assets/img/experience/hacka.jpg"
+        ]
+    },
+    {
+        "title": "Nominated for Intern of the Year",
+        "date": "2018-02-06T00:00:00.000Z",
+        "location": "Indiana INTERNnet",
+        "description": "I was nominated by Indiana Farm Bureau Insurance for intern of the year through Indiana INTERNnet.",
+        "links": [
+            {
+                "url": "https://www.linkedin.com/feed/update/urn:li:activity:6367116484824567808",
+                "text": "View Post on LinkedIn",
+                "icon": "assets/svg/icon/linkedin.svg"
+            }
+        ],
+        "images": [
+            "assets/img/experience/internaward1.jpg"
+        ]
+    },
+    {
+        "title": "Mission Trip: South Chicago",
+        "date": "2017-06-20T00:00:00.000Z",
+        "location": "Roseland Community \"Good News\" Daycare",
+        "description": "Our group of 12 went to southern Chicago for a week to help run a daycare for financially restricted families. While there, I filmed and edited a video to summarize the experience, which you can watch via the link below.",
+        "links": [
+            {
+                "url": "https://www.youtube.com/watch?v=zLz4_wlsnd4",
+                "text": "See the video on YouTube",
+                "icon": "assets/svg/icon/yt.svg"
+            },
+            {
+                "url": "https://goo.gl/photos/paSiRoVmYVs7mPvq5",
+                "text": "See more on Google Photos",
+                "icon": "assets/svg/icon/photos.svg"
+            }
+        ],
+        "images": [
+            "assets/img/experience/rose3.jpg",
+            "assets/img/experience/rose2.jpg",
+            "assets/img/experience/rose1.jpg"
+        ]
+    },
+    {
+        "title": "Computer Graphics",
+        "date": "2016-01-20T00:00:00.000Z",
+        "location": "The Net - Connection Pointe Christian Church",
+        "description": "The Net is a young adults group that meets every other Sunday. I assist with set-up, create visual elements and loops, and manage the on-screen lyrics and notes during the service.",
+        "links": [],
+        "images": []
+    }
+]

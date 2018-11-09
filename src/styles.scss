@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./reset.scss";
+@import "./values.scss";
+@import "./spacing.scss";
+@import 'node_modules/flexboxes/main';
+@import './simple-grid.scss';
+@import './typography.scss';
+@import './sizing.scss';
+@import './tooltip.scss';
+.bg-dim {
+    background-color: $dim;
+}
+
+* {
+    font-family: $font;
+}
+
+.pos-fixed {
+    position: fixed;
+}
+
+router-outlet~* {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.fader {
+    background-image: url('assets/svg/fader.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tile-icon {
+    max-height: 4rem;
+    max-width: 4rem;
+    display: block;
+}
+
+.mega-tile-icon {
+    max-height: 4rem;
+    display: block;
+}
+
+.btn-icon {
+    height: 1.3em;
+    max-width: 1.3em;
+}
+
+.animate-all-slow {
+    transition: all 1s ease;
+}

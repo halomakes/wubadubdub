@@ -1,0 +1,20 @@
+@for $index from 0 to 21 {
+  $size: percentage($index/20);
+  $label: $index * 5;
+
+  .w-#{$label} {
+    width: $size;
+  }
+
+  .h-#{$label} {
+    height: $size;
+  }
+}
+
+.fullpage {
+  min-height: 100vh;
+}
+
+.fullpage-push {
+  min-height: calc(100vh - 40px);
+}

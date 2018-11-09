@@ -1,0 +1,13 @@
+@import "../../../../values.scss";
+.navLink {
+    color: $white;
+}
+
+.navbar-brand {
+    max-height: 1.8em;
+}
+
+.navbar {
+    transition: all 1s ease;
+    z-index: 300;
+}

@@ -1,0 +1,35 @@
+<div class="flex pt-8 fader">
+  <div class="container">
+    <div class="flex justify-center fullpage-push flex-column">
+      <h1 class="text-hero mt-8">{{content?.title}}</h1>
+      <p class="my-3">{{content?.content}}</p>
+      <div class="row">
+        <div class="col-4">
+          <h3 class="my-4">Specialties</h3>
+          <ul>
+            <li class="language-tag" *ngFor="let s of specialties">
+              <img [src]="getImageUri(s.fileName)" [alt]="s.description" [tooltip]="s.description" placement="left"
+                show-delay="200" tooltip-class="tooltip">
+              <ul>
+                <li *ngFor="let f of s.frameworks">{{f}}</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h3 class="my-4">Other Proficiencies</h3>
+          <div class="flex flex-wrap flex-row language-list">
+            <span *ngFor="let l of languages" [ngStyle]="getStyle(l)" alt="l.description" class="language-list-item"
+              [tooltip]="l.description" show-delay="200" tooltip-class="tooltip"></span>
+          </div>
+        </div>
+        <div class="col-4">
+          <h3 class="my-4">Character traits</h3>
+          <ul class="flex flex-column">
+            <li class="my-1" *ngFor="let i of interpersonal">{{i}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="flex text-white pos-fixed w-100 navbar" [class.bg-dim]="navbar.isOpaque()" [hidden]="!navbar.isVisible()">
+  <div class="container">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center grow-1">
+        <img src="assets/svg/halowhite.svg" class="navbar-brand">
+        <div class="ml-3">Alex Griffith</div>
+      </div>
+      <div class="flex">
+        <fsr-button *ngFor="let l of links" (click)="scrollToTop(l.routerLink)" color="white" [solid]="false" [fixed]="true"
+          [routerLink]="l.routerLink">{{l.label}}</fsr-button>
+      </div>
+    </div>
+  </div>
+</div>
