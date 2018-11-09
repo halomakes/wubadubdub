@@ -118,8 +118,36 @@
         ],
         "expanded": false,
         "tech": [
-            "Adobe XD CC",
-            "Adobe InDesign CC"
+            "XD CC",
+            "InDesign CC"
+        ]
+    },
+    {
+        "name": "Graphic Design",
+        "color": [
+            40,
+            40,
+            40
+        ],
+        "icon": "assets/svg/creation/graphics.svg",
+        "routerLink": [
+            "/creations/graphics"
+        ],
+        "description": null,
+        "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
+        "links": [
+            {
+                "url": "https://www.halomademeapc.com/graphicdesign.html",
+                "text": "View samples at legacy site",
+                "icon": "assets/svg/mono/open-in-new.svg"
+            }
+        ],
+        "expanded": false,
+        "tech": [
+            "Animate CC",
+            "Illustrator CC",
+            "After Effects CC",
+            "Maya"
         ]
     }
 ]
