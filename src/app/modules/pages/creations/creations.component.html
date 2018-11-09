@@ -1,4 +1,4 @@
-<div class="flex pt-8 fader">
+<div class="flex pt-8">
   <div class="container">
     <div class="flex justify-center fullpage-push flex-column">
       <h1 class="text-hero mt-8">Creations</h1>
@@ -18,7 +18,7 @@
               <fsr-tile [color]="c.color" [mega]="true" *ngFor="let l of c.links" [href]="l.url" class="mx-1 my-2">
                 <span class="flex items-center text-white px-3 py-2">
                   <img [src]="l.icon" *ngIf="l.icon" class="btn-icon mr-2">
-                  {{l.text}}
+                  <span class="no-wrap">{{l.text}}</span>
                 </span>
               </fsr-tile>
             </div>
