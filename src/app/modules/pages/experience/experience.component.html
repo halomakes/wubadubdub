@@ -9,12 +9,12 @@
         <fsr-button color="grey" (click)="toggleOther()" [solid]="false" [inactive]="!showOther">Other</fsr-button>
       </div>
       <div *ngIf="hasLoaded">
-        <div *ngIf="!model.length" class="justify-center flex flex-row py-10 text-dim">
+        <div *ngIf="!displayedEvents.length" class="justify-center flex flex-row py-10 text-dim">
           <span>
             There is no content matching the selected filter.
           </span>
         </div>
-        <app-timeline [events]="model"></app-timeline>
+        <app-timeline [events]="displayedEvents"></app-timeline>
       </div>
     </div>
   </div>

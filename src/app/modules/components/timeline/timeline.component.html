@@ -1,4 +1,4 @@
-<div *ngFor="let v of events">
+<div *ngFor="let v of model">
   <div *ngFor="let e of v.experience" class="flex flex-column my-10 items-center">
     <h3>{{e.title}}</h3>
     <small class="font-light text-dim mt-1" *ngIf="e.location">{{e.location}}</small>
