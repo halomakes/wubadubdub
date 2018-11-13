@@ -5,9 +5,10 @@ import { FloatySpaceRingUiModule } from '../floaty-space-ring-ui/floaty-space-ri
 import { RouterModule } from '@angular/router';
 import { TimelineComponent } from './timeline/timeline.component';
 import { ProductSummaryComponent } from './product-summary/product-summary.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
-  declarations: [NavbarComponent, TimelineComponent, ProductSummaryComponent],
+  declarations: [NavbarComponent, TimelineComponent, ProductSummaryComponent, GalleryComponent],
   imports: [
     CommonModule,
     FloatySpaceRingUiModule,
