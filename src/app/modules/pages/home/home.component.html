@@ -1,10 +1,15 @@
 <div class="flex home-hero text-white">
-  <div class="container">
+  <video autoplay muted loop class="video-fullscreen">
+    <source src="assets/video/ringy.mp4" type="video/mp4">
+  </video>
+  <div class="container content">
     <div class="flex justify-center fullpage flex-column">
-      <h1 class="text-hero">{{mainContent?.title}}</h1>
-      <p class="my-3">{{mainContent?.content}}</p>
-      <div>
-        <fsr-button *ngIf="mainContent" [routerLink]="mainContent.link.action" size="large">{{mainContent.link?.text}}</fsr-button>
+      <div class="home-card">
+        <h1 class="text-hero">{{mainContent?.title}}</h1>
+        <p class="my-3">{{mainContent?.content}}</p>
+        <div>
+          <fsr-button *ngIf="mainContent" [routerLink]="mainContent.link.action" size="large">{{mainContent.link?.text}}</fsr-button>
+        </div>
       </div>
     </div>
   </div>
