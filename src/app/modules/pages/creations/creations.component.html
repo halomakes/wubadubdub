@@ -2,28 +2,8 @@
   <div class="container">
     <div class="flex justify-center fullpage-push flex-column">
       <h1 class="text-hero mt-8">Creations</h1>
-      <div class="my-5 flex flex-column" *ngFor="let c of creations">
-        <div class="w-100 my-5 flex flex-row flex-wrap justify-center">
-          <div class="flex flex-row flex-wrap justify-center items-center w-80 my-3" [ngStyle]="getColor(c)">
-            <img class="mega-tile-icon" [alt]="c.name" [src]="c.icon">
-            <span class="ml-4 my-3">{{c.description}}</span>
-          </div>
-          <div class="flex flex-column items-center">
-            <span class="col-8 mt-6 mb-4 justify">{{c.blurb}}</span>
-              <div class="flex flex-column items-center mb-3">
-                <span class="font-heavy my-1">Technology Used</span>
-                <span class="my-1" *ngFor="let t of c.tech">{{t}}</span>
-              </div>
-            <div class="flex flex-row justify-center" *ngIf="c.links.length">
-              <fsr-tile [color]="c.color" [mega]="true" *ngFor="let l of c.links" [href]="l.url" class="mx-1 my-2">
-                <span class="flex items-center text-white px-3 py-2">
-                  <img [src]="l.icon" *ngIf="l.icon" class="btn-icon mr-2">
-                  <span class="no-wrap">{{l.text}}</span>
-                </span>
-              </fsr-tile>
-            </div>
-          </div>
-        </div>
+      <div class="my-5 flex flex-column fade-up-delayed" *ngFor="let c of creations">
+        <app-product-summary [model]="c"></app-product-summary>
       </div>
     </div>
   </div>

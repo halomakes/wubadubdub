@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavbarService } from '../../components/navbar.service';
 import { HttpClient } from '@angular/common/http';
 import { Subscription } from 'rxjs';
-import { Creation } from './creation';
+import { ProductSummaryViewModel } from '../../components/product-summary/product-summary-viewmodel';
 
 @Component({
   selector: 'app-creations',
@@ -10,7 +10,7 @@ import { Creation } from './creation';
   styleUrls: ['./creations.component.scss']
 })
 export class CreationsComponent implements OnInit {
-  creations: Array<Creation>;
+  creations: Array<ProductSummaryViewModel>;
 
   constructor(private navbar: NavbarService,
     private http: HttpClient) { }
@@ -21,10 +21,6 @@ export class CreationsComponent implements OnInit {
   }
 
   loadList = (): Subscription =>
-    this.http.get<Creation[]>('assets/data/creations/list.json')
+    this.http.get<ProductSummaryViewModel[]>('assets/data/creations/list.json')
       .subscribe(r => this.creations = r)
-
-  getColor = (c: Creation) => <any>{
-    'color': `rgb(${c.color.join()})`
-  }
 }

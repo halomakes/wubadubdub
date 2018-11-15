@@ -1,13 +1,53 @@
 @import "../../../../values.scss";
+
 .navLink {
-    color: $white;
+  color: $white;
 }
 
 .navbar-brand {
-    max-height: 1.8em;
+  max-height: 1.8em;
+}
+
+.navgroup {
+  z-index: 300;
 }
 
 .navbar {
-    transition: all 1s ease;
-    z-index: 300;
+  transition: all 1s ease;
+
+  .overlays {
+    display: none;
+  }
+}
+
+.navbar.bg-dim {
+  .overlays {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    bottom: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 304;
+
+    .left-overlay,
+    .right-overlay {
+      width: 10%;
+      height: 100%;
+    }
+
+    .left-overlay {
+      background-image: linear-gradient(to right, $dim, transparent);
+    }
+
+    .right-overlay {
+      background-image: linear-gradient(to left, $dim, transparent);
+    }
+  }
+}
+
+.horizontal-scroll {
+  overflow-x: auto;
+  flex-shrink: 2;
 }
