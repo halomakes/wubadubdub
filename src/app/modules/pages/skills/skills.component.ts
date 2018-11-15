@@ -43,11 +43,18 @@ export class SkillsComponent implements OnInit {
     this.http.get<ContentBlock>('assets/data/skills/skills.json')
       .subscribe(r => this.content = r)
 
-  getStyle = (l: LanguageIcon) => {
-    return {
-      'background-image': `url('${this.getImageUri(l.fileName)}')`
-    };
+  getStyle = (l: LanguageIcon) => <any>{
+    'background-image': `url('${this.getImageUri(l.fileName)}')`,
+    'animation': this.getDelayedFallInAnimation()
   }
 
   getImageUri = (fileName: string) => `assets/svg/icon/${fileName}.svg`;
+
+  getAnimationStyle = () => <any>{
+    'animation': this.getDelayedFallInAnimation()
+  }
+
+  getDelayedFallInAnimation = (): string => `fall-in 2s forwards ease ${this.getRandomDelay()}ms`;
+
+  getRandomDelay = (): number => Math.floor(Math.random() * 1400) + 300;
 }

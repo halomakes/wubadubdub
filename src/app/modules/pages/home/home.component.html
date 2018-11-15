@@ -1,10 +1,12 @@
 <div class="flex home-hero text-white">
-  <video autoplay muted loop class="video-fullscreen">
-    <source src="assets/video/ringy.mp4" type="video/mp4">
-  </video>
+  <div class="video-fullscreen">
+    <video autoplay muted loop>
+      <source src="assets/video/ringy.mp4" type="video/mp4">
+    </video>
+  </div>
   <div class="container content">
     <div class="flex justify-center fullpage flex-column">
-      <div class="home-card">
+      <div class="home-card fade-up-delayed">
         <h1 class="text-hero">{{mainContent?.title}}</h1>
         <p class="my-3">{{mainContent?.content}}</p>
         <div>
