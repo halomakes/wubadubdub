@@ -41,6 +41,10 @@ $breakpoint-large: 60em; // 960px
   width: 100%;
 }
 
+.d-sm {
+  display: none;
+}
+
 .row [class^="col"] {
   float: left;
   margin: 0.5rem 2%;
@@ -99,5 +103,8 @@ $breakpoint-large: 60em; // 960px
 @media only screen and (max-width: $breakpoint-small) {
     .hidden-sm {
     display: none;
+  }
+  .d-sm {
+    display: block;
   }
 }
