@@ -17,7 +17,16 @@ export class GalleryComponent {
 
   sanitizeUrl = (url: string) => this.sanitizer.bypassSecurityTrustResourceUrl(url);
 
+  getVideoUrl = (id: string) => `https://www.youtube.com/embed/${id}`;
+
+  getThumbnailUrl = (id: string) => `http://i3.ytimg.com/vi/${id}/maxresdefault.jpg`;
+
+  getVideoBackground = (id: string) => <any>{
+    'background-image': `url('${this.getThumbnailUrl(id)}')`
+  }
+
   highlightImage = ($event: any, image: Graphic) => {
+    console.log($event, image);
     this.selectedImage = image;
     const pos: DOMRect = $event.target.getBoundingClientRect();
     $event.srcElement.style.position = 'fixed';
