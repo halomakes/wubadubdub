@@ -49,9 +49,20 @@ export class GalleryComponent implements OnChanges {
   highlightImage = ($event: any, image: GraphicViewModel) => {
     this.selectedImage = image;
     const pos: DOMRect = $event.target.getBoundingClientRect();
+    const maxSize = { x: 0.9 * window.innerWidth, y: 0.9 * window.innerHeight };
+    const scales = [
+      pos.width / maxSize.x,
+      pos.height / maxSize.y
+    ];
+    const windowCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    const targetScale = Math.max(...scales);
+    const targetOffset = { x: pos.x - windowCenter.x, y: pos.y - windowCenter.y };
+    const scaledOffset = { x: targetOffset.x * targetScale, y: targetOffset.y * targetScale };
+    console.log(scaledOffset);
+    console.log(targetOffset);
     $event.srcElement.style.position = 'fixed';
-    $event.srcElement.style.left = `${pos.x}px`;
-    $event.srcElement.style.top = `${pos.y}px`;
+    // $event.srcElement.style.transform = `translate(${targetOffset.x}px, ${targetOffset.y}px) scale(${targetScale})`;
+    $event.srcElement.style.transform = `translate(${pos.x}px, ${pos.y}px)`;
     $event.srcElement.classList.add('selected');
   }
 
@@ -63,8 +74,7 @@ export class GalleryComponent implements OnChanges {
 
   resetFocus = (elem: any): void => {
     elem.style.removeProperty('position');
-    elem.style.removeProperty('left');
-    elem.style.removeProperty('top');
+    elem.style.removeProperty('transform');
     elem.classList.remove('selected');
   }
 }

@@ -1,98 +1,91 @@
 @import '../../../../values.scss';
-
 .graphic-image {
-  width: 20rem;
-  top: 0;
-  left: 0;
-  cursor: zoom-in;
-  object-fit: contain;
+    width: 20rem;
+    top: 0;
+    left: 0;
+    cursor: zoom-in;
+    object-fit: contain;
+    will-change: transform;
 }
 
 .video-embed {
-  height: 11.25rem;
-  pointer-events: initial;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  iframe {
-    width: 100%;
-    height: 100%;
-  }
+    height: 11.25rem;
+    pointer-events: initial;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .image-primary {
-  position: absolute;
+    position: absolute;
 }
 
 .selected {
-  animation: focus-center .8s ease .3s forwards;
-  z-index: 20;
+    animation: focus-center .8s ease .3s forwards;
+    z-index: 20;
 }
 
 .selected.matte {
-  animation: focus-center-matte .8s ease .3s forwards;
+    animation: focus-center-matte .8s ease .3s forwards;
 }
 
 .holder {
-  visibility: hidden;
-  pointer-events: none;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .img-holder {
-  position: relative;
+    position: relative;
 }
 
 .dim-filter {
-  position: fixed;
-  background-color: transparentize($color: $dim, $amount: .3);
-  display: block;
-  opacity: 0;
-  transition: all .5s ease;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  z-index: 18;
+    position: fixed;
+    background-color: transparentize($color: $dim, $amount: .3);
+    display: block;
+    opacity: 0;
+    transition: all .5s ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 18;
 }
 
 .filter-on {
-  opacity: 1;
-  display: block;
-  pointer-events: initial;
-  cursor: zoom-out;
+    opacity: 1;
+    display: block;
+    pointer-events: initial;
+    cursor: zoom-out;
 }
 
 .disable-click {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 @keyframes focus-center-matte {
-  0% {
-    background-color: transparent;
-    padding: 0;
-  }
-
-  100% {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90vw;
-    height: 90vh;
-    background-color: white;
-    padding: 2rem;
-  }
+    0% {
+        background-color: transparent;
+        padding: 0;
+    }
+    100% {
+        transform: translate(50vw, 50vh) translate(-50%, -50%);
+        width: 90vw;
+        height: 90vh;
+        background-color: white;
+        padding: 2rem;
+    }
 }
 
 @keyframes focus-center {
-  0% {}
-
-  100% {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90vw;
-    height: 90vh;
-  }
+    0% {}
+    100% {
+        transform: translate(50vw, 50vh) translate(-50%, -50%);
+        width: 90vw;
+        height: 90vh;
+    }
 }
