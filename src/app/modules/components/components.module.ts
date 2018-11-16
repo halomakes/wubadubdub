@@ -17,7 +17,8 @@ import { GalleryComponent } from './gallery/gallery.component';
   exports: [
     NavbarComponent,
     TimelineComponent,
-    ProductSummaryComponent
+    ProductSummaryComponent,
+    GalleryComponent
   ]
 })
 export class ComponentsModule { }

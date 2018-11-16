@@ -1,0 +1,34 @@
+.graphic-image {
+  max-width: 20rem;
+  top: 0;
+  left: 0;
+}
+
+.image-primary {
+  position: absolute;
+}
+
+.selected {
+  animation: focus-center .5s ease .3s forwards;
+  z-index: 20;
+}
+
+.holder {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.img-holder {
+  position: relative;
+}
+
+@keyframes focus-center {
+  0% {}
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+}

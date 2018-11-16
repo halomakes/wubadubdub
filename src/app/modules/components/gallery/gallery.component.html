@@ -1,3 +1,15 @@
-<p>
-  gallery works!
-</p>
+<div class="container zoomViewport mt-8">
+
+  <div class="zoomContainer">
+    <div *ngFor="let i of images">
+      <div class="img-holder">
+        <img [src]="i.path" [alt]="i.title" class="graphic-image zoomTarget" data-closeclick="true">
+      </div>
+      <div>
+        {{i.title}}
+        {{i.subtitle}}
+      </div>
+    </div>
+  </div>
+
+</div>
