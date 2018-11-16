@@ -11,7 +11,7 @@
     <div class="img-holder" *ngIf="i.video">
       <div class="graphic-image image-primary video-embed" [class.matte]="i.showMatte" (click)="highlightImage($event, i)"
         [ngStyle]="i.videoBackgroundStyle">
-        <iframe *ngIf="selectedImage===i" [src]="i.embedUrl" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        <iframe class="fade-in" *ngIf="selectedImage===i" [src]="i.embedUrl" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
       <div class="graphic-image holder video-embed"></div>

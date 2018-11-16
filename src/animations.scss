@@ -6,6 +6,10 @@
   animation: fade-in-up-delayed 2.4s normal 0s ease;
 }
 
+.fade-in {
+  animation: fade-in 1s normal 0s ease;
+}
+
 router-outlet~* {
   position: absolute;
   height: 100%;
