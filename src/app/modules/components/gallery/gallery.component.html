@@ -1,15 +1,13 @@
-<div class="container zoomViewport mt-8">
-
-  <div class="zoomContainer">
-    <div *ngFor="let i of images">
-      <div class="img-holder">
-        <img [src]="i.path" [alt]="i.title" class="graphic-image zoomTarget" data-closeclick="true" data-targetsize="0.7">
-      </div>
-      <div>
-        {{i.title}}
-        {{i.subtitle}}
-      </div>
+<div class="dim-filter" [class.filter-on]="selectedImage" (click)="exitSelection()"></div>
+<div class="container mt-8">
+  <div *ngFor="let i of images">
+    <div class="img-holder">
+      <img [src]="i.path" [alt]="i.title" class="graphic-image image-primary" (click)="highlightImage($event, i)" [class.disable-click]="selectedImage">
+      <img [src]="i.path" [alt]="i.title" class="graphic-image holder">
+    </div>
+    <div>
+      {{i.title}}
+      {{i.subtitle}}
     </div>
   </div>
-
 </div>

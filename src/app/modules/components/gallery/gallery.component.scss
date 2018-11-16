@@ -1,3 +1,5 @@
+@import '../../../../values.scss';
+
 .graphic-image {
   max-width: 20rem;
   top: 0;
@@ -20,6 +22,31 @@
 
 .img-holder {
   position: relative;
+}
+
+.dim-filter {
+    position: fixed;
+    background-color: transparentize($color: $dim, $amount: .3);
+    display: block;
+    opacity: 0;
+    transition: all .5s ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 18;
+}
+
+.filter-on {
+    opacity: 1;
+    display: block;
+    pointer-events: initial;
+    cursor: pointer;
+}
+
+.disable-click {
+    pointer-events: none;
 }
 
 @keyframes focus-center {

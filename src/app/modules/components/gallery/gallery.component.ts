@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, AfterViewChecked } from '@angular/core';
 import { Graphic } from './graphic';
-declare var $: any;
 
 @Component({
   selector: 'app-gallery',
@@ -20,8 +19,8 @@ export class GalleryComponent implements OnInit, AfterViewChecked {
     // $('.img-holder').zoomTarget();
   }
 
-  highlightImage = ($event: any) => {
-    console.log($event);
+  highlightImage = ($event: any, image: Graphic) => {
+    this.selectedImage = image;
     const pos: DOMRect = $event.target.getBoundingClientRect();
     $event.srcElement.style.position = 'fixed';
     $event.srcElement.style.left = `${pos.x}px`;
@@ -29,7 +28,16 @@ export class GalleryComponent implements OnInit, AfterViewChecked {
     $event.srcElement.classList.add('selected');
   }
 
-  zoomTo = ($event) => {
-    $($event.target).zoomTo();
+  exitSelection = () => {
+    this.selectedImage = null;
+    const targets = document.querySelectorAll('.image-primary');
+    targets.forEach(this.resetFocus);
+  }
+
+  resetFocus = (elem: any): void => {
+    elem.style.removeProperty('position');
+    elem.style.removeProperty('left');
+    elem.style.removeProperty('top');
+    elem.classList.remove('selected');
   }
 }
