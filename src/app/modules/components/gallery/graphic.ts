@@ -5,4 +5,5 @@ export class Graphic {
     public blurb: string;
     public sortOrder: number;
     public showMatte: boolean;
+    public video: string;
 }
