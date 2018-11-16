@@ -1,11 +1,18 @@
 <div class="dim-filter" [class.filter-on]="selectedImage" (click)="exitSelection()"></div>
 <div class="mt-8 flex flex-row flex-wrap justify-between" *ngIf="images?.length">
   <div *ngFor="let i of images.sort(orderImages)" class="flex flex-row my-5 col-6 items-center flex-wrap">
-    <div class="img-holder">
+    <div class="img-holder" *ngIf="i.path">
       <img [src]="i.path" [alt]="i.title" class="graphic-image image-primary" [class.matte]="i.showMatte" (click)="highlightImage($event, i)"
         [class.disable-click]="selectedImage">
       <img [src]="i.path" [alt]="i.title" class="graphic-image holder">
     </div>
+    <div class="img-holder" *ngIf="i.video">
+      <iframe [src]="sanitizeUrl(i.video)" class="graphic-image image-primary video-embed" [class.matte]="i.showMatte" (click)="highlightImage($event, i)"
+        [class.disable-click]="selectedImage" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <div class="graphic-image holder video-embed"></div>
+    </div>
+
     <div class="flex flex-column justify-center ml-3 mt-3 shrink-2">
       <h2>{{i.title}}</h2>
       <h5 *ngIf="i.subtitle">{{i.subtitle}}</h5>

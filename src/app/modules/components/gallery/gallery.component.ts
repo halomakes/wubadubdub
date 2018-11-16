@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, AfterViewChecked } from '@angular/core';
 import { Graphic } from './graphic';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-gallery',
@@ -10,9 +11,11 @@ export class GalleryComponent {
   @Input() images: Array<Graphic>;
   selectedImage: Graphic;
 
-  constructor() { }
+  constructor(private sanitizer: DomSanitizer) { }
 
   orderImages = (a: Graphic, b: Graphic) => a.sortOrder - b.sortOrder;
+
+  sanitizeUrl = (url: string) => this.sanitizer.bypassSecurityTrustResourceUrl(url);
 
   highlightImage = ($event: any, image: Graphic) => {
     this.selectedImage = image;

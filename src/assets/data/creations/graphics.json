@@ -3,29 +3,65 @@
     "subtitle": "Graphic for The Exponent",
     "path": "assets/gallery/prix-pops.png",
     "blurb": null,
-    "sortOrder": 8,
-    "showMatte": false
+    "sortOrder": 28,
+    "showMatte": false,
+    "video": null
   },
   {
     "title": "Spotify Stats",
     "subtitle": "Graphic for The Exponent",
     "path": "assets/gallery/spotify.svg",
     "blurb": null,
-    "sortOrder": 1,
-    "showMatte": true
+    "sortOrder": 21,
+    "showMatte": true,
+    "video": null
   }, {
     "title": "Frosty",
     "subtitle": "Graphic for The Exponent",
     "path": "assets/gallery/frosty.svg",
     "blurb": null,
-    "sortOrder": 2,
-    "showMatte": false
+    "sortOrder": 22,
+    "showMatte": false,
+    "video": null
   }, {
     "title": "Colonizing Mars",
     "subtitle": "Graphic for The Exponent",
     "path": "assets/gallery/mars.jpg",
     "blurb": null,
-    "sortOrder": 3,
-    "showMatte": false
+    "sortOrder": 23,
+    "showMatte": false,
+    "video": null
+  }, {
+    "title": "Q4 Cover",
+    "subtitle": "Design for The Reveille",
+    "path": "assets/gallery/reveille-q4.jpg",
+    "blurb": null,
+    "sortOrder": 41,
+    "showMatte": false,
+    "video": null
+  }, {
+    "title": "Q3 Cover",
+    "subtitle": "Design for The Reveille",
+    "path": "assets/gallery/reveille-q3.jpg",
+    "blurb": null,
+    "sortOrder": 42,
+    "showMatte": false,
+    "video": null
+  }, {
+    "title": "Halo Logo",
+    "subtitle": "Render",
+    "path": "assets/gallery/rytyrtu.jpg",
+    "blurb": null,
+    "sortOrder": 52,
+    "showMatte": false,
+    "video": null
+  }, {
+    "title": "Fall Fest",
+    "subtitle": "Motion Graphic for The Net",
+    "path": null,
+    "blurb": null,
+    "sortOrder": 15,
+    "showMatte": false,
+    "video": "https://www.youtube.com/embed/i4G4uGjAwyU"
   }
 ]

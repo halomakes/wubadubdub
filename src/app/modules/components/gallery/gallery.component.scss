@@ -8,6 +8,18 @@
   object-fit: contain;
 }
 
+.video-embed {
+  height: 11.25rem;
+
+  * {
+    pointer-events: none;
+  }
+}
+
+.video-embed.selected * {
+  pointer-events: initial;
+}
+
 .image-primary {
   position: absolute;
 }
