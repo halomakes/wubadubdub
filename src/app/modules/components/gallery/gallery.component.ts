@@ -26,7 +26,6 @@ export class GalleryComponent {
   }
 
   highlightImage = ($event: any, image: Graphic) => {
-    console.log($event, image);
     this.selectedImage = image;
     const pos: DOMRect = $event.target.getBoundingClientRect();
     $event.srcElement.style.position = 'fixed';
