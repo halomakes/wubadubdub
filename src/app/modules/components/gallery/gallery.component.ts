@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, AfterViewChecked } from '@angular/core';
 import { Graphic } from './graphic';
-
 declare var $: any;
 
 @Component({

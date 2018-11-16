@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { routerTransition } from './animations';
+declare var $: any;
 
 @Component({
   selector: 'app-root',

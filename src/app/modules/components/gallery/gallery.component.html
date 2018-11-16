@@ -3,7 +3,7 @@
   <div class="zoomContainer">
     <div *ngFor="let i of images">
       <div class="img-holder">
-        <img [src]="i.path" [alt]="i.title" class="graphic-image zoomTarget" data-closeclick="true">
+        <img [src]="i.path" [alt]="i.title" class="graphic-image zoomTarget" data-closeclick="true" data-targetsize="0.7">
       </div>
       <div>
         {{i.title}}

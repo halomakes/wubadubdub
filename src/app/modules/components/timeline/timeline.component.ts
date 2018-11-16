@@ -4,6 +4,7 @@ import { Education } from './education';
 import { Experience } from './experience';
 
 const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+declare var $: any;
 
 @Component({
   selector: 'app-timeline',
