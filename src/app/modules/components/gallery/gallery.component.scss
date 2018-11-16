@@ -4,6 +4,7 @@
   max-width: 20rem;
   top: 0;
   left: 0;
+  cursor: zoom-in;
 }
 
 .image-primary {
@@ -42,7 +43,7 @@
     opacity: 1;
     display: block;
     pointer-events: initial;
-    cursor: pointer;
+    cursor: zoom-out;
 }
 
 .disable-click {

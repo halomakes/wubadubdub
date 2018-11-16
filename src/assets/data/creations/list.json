@@ -1,153 +1,133 @@
-[
-    {
-        "name": "DeskDex",
-        "color": [
-            180,
-            47,
-            38
-        ],
-        "icon": "assets/svg/creation/deskdex.svg",
-        "routerLink": [
-            "/creations/deskdex"
-        ],
-        "description": "employee locator",
-        "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
-        "links": [
-            {
-                "url": "https://github.com/halomademeapc/DeskDex",
-                "text": "View on GitHub",
-                "icon": "assets/svg/mono/github.svg"
-            },
-            {
-                "url": "https://deskdex.azurewebsites.net",
-                "text": "See Demo",
-                "icon": "assets/svg/mono/open-in-new.svg"
-            }
-        ],
-        "expanded": false,
-        "tech": [
-            "ASP.NET Core",
-            "Entity Framework Core",
-            "Azure AD",
-            "Material Design Bootstrap",
-            "jQuery"
-        ]
-    },
-    {
-        "name": "phÿnd",
-        "color": [
-            66,
-            133,
-            244
-        ],
-        "icon": "assets/svg/creation/phynd.svg",
-        "routerLink": [
-            "/creations/phynd"
-        ],
-        "description": "learning tic·tac·toe",
-        "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
-        "links": [
-            {
-                "url": "https://github.com/halomademeapc/PhYnd",
-                "text": "View on GitHub",
-                "icon": "assets/svg/mono/github.svg"
-            },
-            {
-                "url": "http://halomademeapc2.pythonanywhere.com/",
-                "text": "See Demo",
-                "icon": "assets/svg/mono/open-in-new.svg"
-            }
-        ],
-        "expanded": false,
-        "tech": [
-            "Bottle",
-            "SQLite",
-            "Material Design Bootstrap",
-            "jQuery"
-        ]
-    },
-    {
-        "name": "PrimeHTML5",
-        "color": [
-            237,
-            30,
-            121
-        ],
-        "icon": "assets/svg/creation/prime.svg",
-        "routerLink": [
-            "/creations/prime"
-        ],
-        "description": "a (very) basic benchmark",
-        "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
-        "links": [
-            {
-                "url": "https://github.com/halomademeapc/PrimeHTML5",
-                "text": "View on GitHub",
-                "icon": "assets/svg/mono/github.svg"
-            },
-            {
-                "url": "https://www.halomademeapc.com/PrimeHTML5/",
-                "text": "See Demo",
-                "icon": "assets/svg/mono/open-in-new.svg"
-            }
-        ],
-        "expanded": false,
-        "tech": [
-            "jQuery Mobile"
-        ]
-    },
-    {
-        "name": "that robot company.",
-        "color": [
-            66,
-            39,
-            54
-        ],
-        "icon": "assets/svg/creation/trc.svg",
-        "routerLink": [
-            "/creations/trc"
-        ],
-        "description": "design doc",
-        "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
-        "links": [
-            {
-                "url": "assets/file/trc.pdf",
-                "text": "Read the doc",
-                "icon": "assets/svg/mono/file-pdf.svg"
-            }
-        ],
-        "expanded": false,
-        "tech": [
-            "XD CC",
-            "InDesign CC"
-        ]
-    },
-    {
-        "name": "Graphic Design",
-        "color": [
-            40,
-            40,
-            40
-        ],
-        "icon": "assets/svg/creation/graphics.svg",
-        "routerLink": [
-            "/creations/graphics"
-        ],
-        "description": null,
-        "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
-        "links": [
-            {
-                "url": "https://www.halomademeapc.com/graphicdesign.html",
-                "text": "View samples at legacy site",
-                "icon": "assets/svg/mono/open-in-new.svg"
-            }
-        ],
-        "expanded": false,
-        "tech": [
-            "Animate CC",
-            "Illustrator CC",
-            "After Effects CC",
-            "Maya"
-        ]
-    }
+[{
+    "name": "DeskDex",
+    "color": [
+      180,
+      47,
+      38
+    ],
+    "icon": "assets/svg/creation/deskdex.svg",
+    "routerLink": null,
+    "description": "employee locator",
+    "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
+    "links": [{
+        "url": "https://github.com/halomademeapc/DeskDex",
+        "text": "View on GitHub",
+        "icon": "assets/svg/mono/github.svg"
+      },
+      {
+        "url": "https://deskdex.azurewebsites.net",
+        "text": "See Demo",
+        "icon": "assets/svg/mono/open-in-new.svg"
+      }
+    ],
+    "expanded": false,
+    "tech": [
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "Azure AD",
+      "Material Design Bootstrap",
+      "jQuery"
+    ]
+  },
+  {
+    "name": "phÿnd",
+    "color": [
+      66,
+      133,
+      244
+    ],
+    "icon": "assets/svg/creation/phynd.svg",
+    "routerLink": null,
+    "description": "learning tic·tac·toe",
+    "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
+    "links": [{
+        "url": "https://github.com/halomademeapc/PhYnd",
+        "text": "View on GitHub",
+        "icon": "assets/svg/mono/github.svg"
+      },
+      {
+        "url": "http://halomademeapc2.pythonanywhere.com/",
+        "text": "See Demo",
+        "icon": "assets/svg/mono/open-in-new.svg"
+      }
+    ],
+    "expanded": false,
+    "tech": [
+      "Bottle",
+      "SQLite",
+      "Material Design Bootstrap",
+      "jQuery"
+    ]
+  },
+  {
+    "name": "PrimeHTML5",
+    "color": [
+      237,
+      30,
+      121
+    ],
+    "icon": "assets/svg/creation/prime.svg",
+    "routerLink": null,
+    "description": "a (very) basic benchmark",
+    "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
+    "links": [{
+        "url": "https://github.com/halomademeapc/PrimeHTML5",
+        "text": "View on GitHub",
+        "icon": "assets/svg/mono/github.svg"
+      },
+      {
+        "url": "https://www.halomademeapc.com/PrimeHTML5/",
+        "text": "See Demo",
+        "icon": "assets/svg/mono/open-in-new.svg"
+      }
+    ],
+    "expanded": false,
+    "tech": [
+      "jQuery Mobile"
+    ]
+  },
+  {
+    "name": "that robot company.",
+    "color": [
+      66,
+      39,
+      54
+    ],
+    "icon": "assets/svg/creation/trc.svg",
+    "routerLink": null,
+    "description": "design doc",
+    "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
+    "links": [{
+      "url": "assets/file/trc.pdf",
+      "text": "Read the doc",
+      "icon": "assets/svg/mono/file-pdf.svg"
+    }],
+    "expanded": false,
+    "tech": [
+      "XD CC",
+      "InDesign CC"
+    ]
+  },
+  {
+    "name": "Graphic Design",
+    "color": [
+      40,
+      40,
+      40
+    ],
+    "icon": "assets/svg/creation/graphics.svg",
+    "routerLink": [
+      "/creations/graphics"
+    ],
+    "description": null,
+    "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
+    "links": [],
+    "expanded": false,
+    "tech": [
+      "Animate CC",
+      "Illustrator CC",
+      "After Effects CC",
+      "Maya"
+    ]
+  }
 ]
