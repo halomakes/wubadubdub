@@ -4,4 +4,5 @@ export class Graphic {
     public path: string;
     public blurb: string;
     public sortOrder: number;
+    public showMatte: boolean;
 }

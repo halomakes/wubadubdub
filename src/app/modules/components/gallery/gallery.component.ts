@@ -6,18 +6,13 @@ import { Graphic } from './graphic';
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss']
 })
-export class GalleryComponent implements OnInit, AfterViewChecked {
+export class GalleryComponent {
   @Input() images: Array<Graphic>;
   selectedImage: Graphic;
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
-  ngAfterViewChecked(): void {
-    // $('.img-holder').zoomTarget();
-  }
+  orderImages = (a: Graphic, b: Graphic) => a.sortOrder - b.sortOrder;
 
   highlightImage = ($event: any, image: Graphic) => {
     this.selectedImage = image;

@@ -1,10 +1,11 @@
 @import '../../../../values.scss';
 
 .graphic-image {
-  max-width: 20rem;
+  width: 20rem;
   top: 0;
   left: 0;
   cursor: zoom-in;
+  object-fit: contain;
 }
 
 .image-primary {
@@ -12,8 +13,12 @@
 }
 
 .selected {
-  animation: focus-center .5s ease .3s forwards;
+  animation: focus-center .8s ease .3s forwards;
   z-index: 20;
+}
+
+.selected.matte {
+  animation: focus-center-matte .8s ease .3s forwards;
 }
 
 .holder {
@@ -26,37 +31,55 @@
 }
 
 .dim-filter {
-    position: fixed;
-    background-color: transparentize($color: $dim, $amount: .3);
-    display: block;
-    opacity: 0;
-    transition: all .5s ease;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: 18;
+  position: fixed;
+  background-color: transparentize($color: $dim, $amount: .3);
+  display: block;
+  opacity: 0;
+  transition: all .5s ease;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 18;
 }
 
 .filter-on {
-    opacity: 1;
-    display: block;
-    pointer-events: initial;
-    cursor: zoom-out;
+  opacity: 1;
+  display: block;
+  pointer-events: initial;
+  cursor: zoom-out;
 }
 
 .disable-click {
-    pointer-events: none;
+  pointer-events: none;
 }
 
-@keyframes focus-center {
-  0% {}
+@keyframes focus-center-matte {
+  0% {
+    background-color: transparent;
+    padding: 0;
+  }
+
   100% {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 90vw;
-    max-height: 90vh;
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    padding: 2rem;
+  }
+}
+
+@keyframes focus-center {
+  0% {}
+
+  100% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 90vh;
   }
 }
