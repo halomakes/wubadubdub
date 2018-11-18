@@ -54,15 +54,16 @@ export class GalleryComponent implements OnChanges {
       pos.width / maxSize.x,
       pos.height / maxSize.y
     ];
-    const windowCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
     const targetScale = Math.max(...scales);
-    const targetOffset = { x: pos.x - windowCenter.x, y: pos.y - windowCenter.y };
-    const scaledOffset = { x: targetOffset.x * targetScale, y: targetOffset.y * targetScale };
-    console.log(scaledOffset);
-    console.log(targetOffset);
+
+    const offset = { x: pos.x + (pos.width / 2), y: pos.y + (pos.height / 2) };
+    const center = { x: maxSize.x / 2, y: maxSize.y / 2 };
+    const diff = { x: offset.x - center.x, y: offset.y - center.y };
+    const scaled = { x: center.x + (diff.x * (1 + targetScale)), y: center.y + (diff.y * (1 + targetScale)) };
+
     $event.srcElement.style.position = 'fixed';
-    // $event.srcElement.style.transform = `translate(${targetOffset.x}px, ${targetOffset.y}px) scale(${targetScale})`;
-    $event.srcElement.style.transform = `translate(${pos.x}px, ${pos.y}px)`;
+    $event.srcElement.style.transformOrigin = `${scaled.x}px ${scaled.y}px`;
+    $event.srcElement.style.transform = `scale(${targetScale})`;
     $event.srcElement.classList.add('selected');
   }
 
