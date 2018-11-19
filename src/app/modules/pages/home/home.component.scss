@@ -1,5 +1,40 @@
+@import "../../../../values.scss";
+
 .home-hero {
-    background-image: url("/assets/img/hero.jpg");
-    background-size: cover;
-    background-position: center;
+  background-image: url("/assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .content {
+    z-index: 30;
+  }
+}
+
+
+.video-fullscreen {
+  overflow: hidden;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  animation: fade-in .5s ease;
+
+  video {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .7;
+  }
+}
+
+.home-card {
+  display: block;
+  padding: 2rem;
+  background-color: transparentize($color: darken($dim, 15), $amount: .1);
+  box-shadow: transparentize($color: black, $amount: .3) 0 0 1.6rem;
 }

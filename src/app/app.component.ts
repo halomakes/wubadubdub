@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { routerTransition } from './animations';
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,6 @@ import { routerTransition } from './animations';
 })
 export class AppComponent {
   title = 'wubadubdub';
+
+  animationDone = ($event: any): void => window.scrollTo(0, 0);
 }

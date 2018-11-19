@@ -8,38 +8,14 @@
 @import './typography.scss';
 @import './sizing.scss';
 @import './tooltip.scss';
-.bg-dim {
-    background-color: $dim;
-}
+@import './animations.scss';
+@import './colors.scss';
+@import './components.scss';
 
 * {
-    font-family: $font;
+  font-family: $font;
 }
 
 .pos-fixed {
-    position: fixed;
-}
-
-router-outlet~* {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-body {
-    max-width: 100vw;
-    overflow-x: hidden;
-}
-
-.fader {
-    background-image: url('assets/svg/fader.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.tile-icon {
-    max-height: 4rem;
-    max-width: 4rem;
-    display: block;
+  position: fixed;
 }

@@ -8,15 +8,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { TooltipModule } from 'ng2-tooltip-directive';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
+import { CreationsComponent } from './creations/creations.component';
+import { ComponentsModule } from '../components/components.module';
+import { GraphicsComponent } from './graphics/graphics.component';
 
 @NgModule({
-  declarations: [HomeComponent, SkillsComponent, ExperienceComponent, ContactComponent],
+  declarations: [HomeComponent, SkillsComponent, ExperienceComponent, ContactComponent, CreationsComponent, GraphicsComponent],
   imports: [
     CommonModule,
     FloatySpaceRingUiModule,
     RouterModule,
     HttpClientModule,
-    TooltipModule
+    TooltipModule,
+    ComponentsModule
   ],
   exports: [
     HomeComponent,

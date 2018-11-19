@@ -11,6 +11,7 @@ export class FsrTileButtonComponent implements OnInit {
   @Input() target: '_blank';
   @Input() fixed = false;
   @Input() color: Array<number>;
+  @Input() mega = false;
   private light: Array<number>;
   private highlight: Array<number>;
   private primary: Array<number>;
@@ -29,7 +30,6 @@ export class FsrTileButtonComponent implements OnInit {
     this.highlight = baseColor.map(c => c * 2.6);
     this.light = baseColor.map(c => c * 2.0);
     this.primary = baseColor.map(c => c * 1.4);
-    console.log(this.primary, this.dark, this.light);
   }
 
   onClick = () => {
