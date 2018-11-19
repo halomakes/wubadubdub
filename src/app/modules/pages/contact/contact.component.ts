@@ -21,9 +21,18 @@ export class ContactComponent implements OnInit {
 
   loadLinks = (): Subscription =>
     this.http.get<Tile[]>('assets/data/contact/social.json')
-      .subscribe(d => this.tiles = d)
+      .subscribe(d => {
+        this.tiles = d;
+        this.tiles.forEach(t => t.style = this.getDelayedSlideUpAnimation());
+      })
 
-  getDelayedSlideUpAnimation = () => <any>{ 'animation': `fall-in 1.4s forwards ease ${this.getRandomDelay()}ms` };
+  getDelayedSlideUpAnimation = () => {
+    const delay: number = this.getRandomDelay();
+    return {
+      'animation': `fall-in 1.4s forwards ease ${delay}ms`,
+      'z-index': `${Math.floor(delay / 100)}`
+    };
+  }
 
   getRandomDelay = (): number => Math.floor(Math.random() * 800) + 300;
 }

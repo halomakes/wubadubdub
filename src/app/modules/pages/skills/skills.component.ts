@@ -29,11 +29,17 @@ export class SkillsComponent implements OnInit {
 
   private loadLanguages = (): Subscription =>
     this.http.get<LanguageIcon[]>('assets/data/skills/languages.json')
-      .subscribe(r => this.languages = r)
+      .subscribe(r => {
+        this.languages = r;
+        this.languages.forEach(l => l.style = this.getStyle(l));
+      })
 
   private loadSpecialties = (): Subscription =>
     this.http.get<Specialty[]>('assets/data/skills/specialties.json')
-      .subscribe(r => this.specialties = r)
+      .subscribe(r => {
+        this.specialties = r;
+        this.specialties.forEach(s => s.style = this.getAnimationStyle());
+      })
 
   private loadInterpersonal = (): Subscription =>
     this.http.get<string[]>('assets/data/skills/interpersonal.json')
