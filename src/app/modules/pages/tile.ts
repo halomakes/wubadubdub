@@ -3,4 +3,5 @@ export class Tile {
     color: Array<number>;
     icon: string;
     link: string;
+    style: any;
 }

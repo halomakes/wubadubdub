@@ -9,17 +9,17 @@
           <ul>
             <li class="language-tag" *ngFor="let s of specialties">
               <img [src]="getImageUri(s.fileName)" [alt]="s.description" [tooltip]="s.description" placement="left"
-                show-delay="200" tooltip-class="tooltip" [ngStyle]="getAnimationStyle()" class="hidden-initial">
+                show-delay="200" tooltip-class="tooltip" [ngStyle]="s.style" class="hidden-initial">
               <ul>
                 <li *ngFor="let f of s.frameworks">{{f}}</li>
               </ul>
             </li>
           </ul>
         </div>
-        <div class="col-4">
+        <div class="col-4" *ngIf="languages && languages.length">
           <h3 class="my-4">Other Proficiencies</h3>
           <div class="flex flex-wrap flex-row language-list">
-            <span *ngFor="let l of languages" [ngStyle]="getStyle(l)" alt="l.description" class="language-list-item hidden-initial"
+            <span *ngFor="let l of languages" [ngStyle]="l.style" alt="l.description" class="language-list-item hidden-initial"
               [tooltip]="l.description" show-delay="200" tooltip-class="tooltip"></span>
           </div>
         </div>
