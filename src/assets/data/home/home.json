@@ -1,10 +1,10 @@
 {
-    "title": "Some title",
-    "content": "Lorem test ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "link": {
-        "text": "See skills",
-        "action": [
-            "/skills"
-        ]
-    }
+  "title": "Talk design to me.",
+  "content": "Hi, my name is Alex and I make things.  They usually aren’t things you can touch, but I try to make them fun and interesting all the same.\nI’m driven by curiosity.  Constantly learning and improving, I strive for each project to be my next masterpiece.  It isn’t enough for something to just work – I want it to be fresh and beautiful.",
+  "link": {
+    "text": "See skills",
+    "action": [
+      "/skills"
+    ]
+  }
 }
