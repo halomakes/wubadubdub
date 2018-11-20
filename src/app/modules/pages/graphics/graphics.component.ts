@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Graphic } from '../../components/gallery/graphic';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-graphics',
@@ -13,11 +14,12 @@ import { map } from 'rxjs/operators';
 export class GraphicsComponent implements OnInit {
   images: Array<Graphic>;
 
-  constructor(private navbar: NavbarService, private http: HttpClient) { }
+  constructor(private navbar: NavbarService, private http: HttpClient, private titleService: Title) { }
 
   ngOnInit() {
     this.navbar.makeOpaque();
     this.loadImages().subscribe();
+    this.titleService.setTitle('Alex Griffith · Designs');
   }
 
 

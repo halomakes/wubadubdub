@@ -6,6 +6,7 @@ import { Education } from '../../components/timeline/education';
 import { map } from 'rxjs/operators';
 import { TimelineViewModel } from '../../components/timeline/timeline-viewmodel';
 import { NavbarService } from '../../components/navbar.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-experience',
@@ -25,7 +26,7 @@ export class ExperienceComponent implements OnInit {
   hasLoaded = false;
   displayedEvents: Array<Experience | Education>;
 
-  constructor(private http: HttpClient, public navbar: NavbarService) { }
+  constructor(private http: HttpClient, public navbar: NavbarService, private titleService: Title) { }
 
   ngOnInit() {
     this.navbar.makeOpaque();
@@ -33,6 +34,7 @@ export class ExperienceComponent implements OnInit {
       this.updateDisplayedEvents();
       this.hasLoaded = true;
     });
+    this.titleService.setTitle('Alex Griffith · Experience');
   }
 
   private updateDisplayedEvents = (): void => { this.displayedEvents = this.getEventsToDisplay(); };
