@@ -8,7 +8,7 @@
     "icon": "assets/svg/creation/deskdex.svg",
     "routerLink": null,
     "description": "employee locator",
-    "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
+    "blurb": "DeskDex helps coworkers find each other and meet up.  It uses a unique identifier from docking stations in to keep track of where everyone is in an unassigned seating plan.  The version on GitHub and Azure includes a map of stations and an administrative back-end.  Since being adopted at Indiana Farm Bureau Insurance, I have expanded the application to include Exchange integration and enhanced personal details.  This was my first application using C# and ASP.NET Core.",
     "links": [{
         "url": "https://github.com/halomademeapc/DeskDex",
         "text": "View on GitHub",
@@ -39,7 +39,7 @@
     "icon": "assets/svg/creation/phynd.svg",
     "routerLink": null,
     "description": "learning tic·tac·toe",
-    "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
+    "blurb": "phÿnd is a machine-learning (in the loosest sense of the term) application that plays tic-tac-toe. phÿnd knows nothing about the game in terms of strategy; it only knows which moves it has made and whether that move led to a loss. phÿnd initially chooses a spot to place its cross at random, leading to some embarassing losses. However, as phÿnd loses, it becomes progressively less likely to make those same decisions that led to a loss.  The application is built around the MENACE concept, as outlined on the about page of the demo site.  This was my first application using Python and Bottle.",
     "links": [{
         "url": "https://github.com/halomademeapc/PhYnd",
         "text": "View on GitHub",
@@ -69,7 +69,7 @@
     "icon": "assets/svg/creation/prime.svg",
     "routerLink": null,
     "description": "a (very) basic benchmark",
-    "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
+    "blurb": "PrimeHTML5 is a basic JavaScript benchmark that tests a device/browser’s ability to crunch prime numbers.  ",
     "links": [{
         "url": "https://github.com/halomademeapc/PrimeHTML5",
         "text": "View on GitHub",
@@ -96,7 +96,7 @@
     "icon": "assets/svg/creation/trc.svg",
     "routerLink": null,
     "description": "design doc",
-    "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
+    "blurb": "This was the design doc produced over the course of the semester for CGT356.  It includes personas, user stories, mood boards, typography and branding, sample photos, wireframes, and a UI prototype.",
     "links": [{
       "url": "assets/file/trc.pdf",
       "text": "Read the doc",
@@ -120,7 +120,7 @@
       "/creations/graphics"
     ],
     "description": null,
-    "blurb": "Fusce dignissim elit vel velit ornare rhoncus. Ut vel justo sit amet ante convallis vestibulum ac bibendum orci. Integer dapibus dui diam, at venenatis erat consectetur at. Donec blandit porttitor nulla, id euismod mi placerat et. Praesent porttitor eget nibh non rutrum. Duis in dictum massa. In feugiat, nibh eget dapibus condimentum, justo purus pellentesque turpis, vel tempor arcu lectus et neque. Curabitur id nibh non leo lobortis egestas. Donec a dignissim odio, in faucibus leo. Ut sed justo sit amet lorem consequat posuere. Aliquam tincidunt convallis lorem, eget tempor magna auctor sed. Morbi pellentesque sem at sodales bibendum. Pellentesque vel tortor odio. Praesent consectetur lobortis rhoncus. Vivamus mi eros, vehicula id fermentum sit amet, iaculis quis leo.",
+    "blurb": "I’ve dabbled in graphic design throughout the years.  You can see some of what I’ve produced in the gallery below.",
     "links": [],
     "expanded": false,
     "tech": [
