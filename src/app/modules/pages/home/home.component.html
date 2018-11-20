@@ -8,7 +8,7 @@
     <div class="flex justify-center fullpage flex-column">
       <div class="home-card fade-up-delayed">
         <h1 class="text-hero">{{mainContent?.title}}</h1>
-        <p class="my-3">{{mainContent?.content}}</p>
+        <p class="my-3 spaced">{{mainContent?.content}}</p>
         <div>
           <fsr-button *ngIf="mainContent" [routerLink]="mainContent.link.action" size="large">{{mainContent.link?.text}}</fsr-button>
         </div>
@@ -20,7 +20,7 @@
   <div class="container">
     <div class="flex justify-center fullpage flex-column">
       <h1 class="text-hero">{{secondaryContent?.title}}</h1>
-      <p class="my-3">{{secondaryContent?.content}}</p>
+      <p class="my-3 spaced">{{secondaryContent?.content}}</p>
       <div>
         <fsr-button *ngIf="secondaryContent" [routerLink]="secondaryContent.link.action" size="large">{{secondaryContent.link?.text}}</fsr-button>
       </div>

@@ -87,5 +87,21 @@
     "sortOrder": 23,
     "showMatte": false,
     "video": "agWQRJK9jLI"
+  }, {
+    "title": "Ghost",
+    "subtitle": "Model for CGT112",
+    "path": "assets/gallery/day.jpg",
+    "blurb": null,
+    "sortOrder": 18,
+    "showMatte": false,
+    "video": null
+  }, {
+    "title": "Ghost (Night)",
+    "subtitle": "Model for CGT112",
+    "path": "assets/gallery/night.jpg",
+    "blurb": null,
+    "sortOrder": 19,
+    "showMatte": false,
+    "video": null
   }
 ]
