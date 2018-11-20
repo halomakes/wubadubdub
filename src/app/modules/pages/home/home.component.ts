@@ -3,6 +3,7 @@ import { NavbarService } from '../../components/navbar.service';
 import { ContentBlock } from '../content-block';
 import { Subscription } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private navbar: NavbarService, private http: HttpClient) { }
+  constructor(private navbar: NavbarService, private http: HttpClient, private titleService: Title) { }
   public mainContent: ContentBlock;
   public secondaryContent: ContentBlock;
 
@@ -19,6 +20,7 @@ export class HomeComponent implements OnInit {
     this.navbar.makeTransparent();
     this.loadMainContent();
     this.loadSecondaryContent();
+    this.titleService.setTitle('Alex Griffith');
   }
 
   private loadMainContent = (): Subscription =>

@@ -3,6 +3,7 @@ import { Tile } from '../tile';
 import { HttpClient } from '@angular/common/http';
 import { Subscription } from 'rxjs';
 import { NavbarService } from '../../components/navbar.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -12,11 +13,12 @@ import { NavbarService } from '../../components/navbar.service';
 export class ContactComponent implements OnInit {
   tiles: Array<Tile>;
 
-  constructor(public http: HttpClient, public navbar: NavbarService) { }
+  constructor(public http: HttpClient, public navbar: NavbarService, private titleService: Title) { }
 
   ngOnInit() {
     this.loadLinks();
     this.navbar.makeOpaque();
+    this.titleService.setTitle('Alex Griffith · Contact');
   }
 
   loadLinks = (): Subscription =>

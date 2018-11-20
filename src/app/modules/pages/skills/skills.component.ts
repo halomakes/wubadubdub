@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { Subscription } from 'rxjs';
 import { Specialty } from './specialty';
 import { ContentBlock } from '../content-block';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-skills',
@@ -13,7 +14,7 @@ import { ContentBlock } from '../content-block';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor(public navbar: NavbarService, private http: HttpClient) { }
+  constructor(public navbar: NavbarService, private http: HttpClient, private titleService: Title) { }
   languages: Array<LanguageIcon>;
   specialties: Array<Specialty>;
   interpersonal: Array<string>;
@@ -25,6 +26,7 @@ export class SkillsComponent implements OnInit {
     this.loadSpecialties();
     this.loadInterpersonal();
     this.loadContent();
+    this.titleService.setTitle('Alex Griffith · Skills');
   }
 
   private loadLanguages = (): Subscription =>
