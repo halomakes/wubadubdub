@@ -1,4 +1,38 @@
-[{
+[
+  {
+    "name": "PokeR",
+    "color": [
+      0,
+      123,
+      255
+    ],
+    "icon": "assets/svg/creation/poker.svg",
+    "routerLink": null,
+    "description": "realtime scrum poker",
+    "blurb": "PokeR is a planning poker game that provides realtime interaction and some fun touches to make sprint planning less of a headache.",
+    "links": [
+      {
+        "url": "https://github.com/halomademeapc/pokeR",
+        "text": "View on GitHub",
+        "icon": "assets/svg/mono/github.svg"
+      },
+      {
+        "url": "https://planning.halomademeapc.com",
+        "text": "See Demo",
+        "icon": "assets/svg/mono/open-in-new.svg"
+      }
+    ],
+    "expanded": false,
+    "tech": [
+      "SignalR",
+      "Angular",
+      "rxjs",
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "Bootstrap 4"
+    ]
+  },
+  {
     "name": "DeskDex",
     "color": [
       180,
@@ -9,7 +43,8 @@
     "routerLink": null,
     "description": "employee locator",
     "blurb": "DeskDex helps coworkers find each other and meet up.  It uses a unique identifier from docking stations in to keep track of where everyone is in an unassigned seating plan.  The version on GitHub and Azure includes a map of stations and an administrative back-end.  Since being adopted at Indiana Farm Bureau Insurance, I have expanded the application to include Exchange integration and enhanced personal details.  This was my first application using C# and ASP.NET Core.",
-    "links": [{
+    "links": [
+      {
         "url": "https://github.com/halomademeapc/DeskDex",
         "text": "View on GitHub",
         "icon": "assets/svg/mono/github.svg"
@@ -40,7 +75,8 @@
     "routerLink": null,
     "description": "learning tic·tac·toe",
     "blurb": "phÿnd is a machine-learning (in the loosest sense of the term) application that plays tic-tac-toe. phÿnd knows nothing about the game in terms of strategy; it only knows which moves it has made and whether that move led to a loss. phÿnd initially chooses a spot to place its cross at random, leading to some embarassing losses. However, as phÿnd loses, it becomes progressively less likely to make those same decisions that led to a loss.  The application is built around the MENACE concept, as outlined on the about page of the demo site.  This was my first application using Python and Bottle.",
-    "links": [{
+    "links": [
+      {
         "url": "https://github.com/halomademeapc/PhYnd",
         "text": "View on GitHub",
         "icon": "assets/svg/mono/github.svg"
@@ -70,7 +106,8 @@
     "routerLink": null,
     "description": "a (very) basic benchmark",
     "blurb": "PrimeHTML5 is a basic JavaScript benchmark that tests a device/browser’s ability to crunch prime numbers.  ",
-    "links": [{
+    "links": [
+      {
         "url": "https://github.com/halomademeapc/PrimeHTML5",
         "text": "View on GitHub",
         "icon": "assets/svg/mono/github.svg"
@@ -87,6 +124,37 @@
     ]
   },
   {
+    "name": "The Song List",
+    "color": [
+      0,
+      123,
+      255
+    ],
+    "icon": "assets/svg/creation/songlist.svg",
+    "routerLink": null,
+    "description": "exactly what it says",
+    "blurb": "The Song List is an app for tracking the songs that show up in a TV show.  Songs can be categorized, and linked to specific episodes.  The app features Google login and last.fm metadata integration. ",
+    "links": [
+      {
+        "url": "https://github.com/halomademeapc/TheSongList",
+        "text": "View on GitHub",
+        "icon": "assets/svg/mono/github.svg"
+      },
+      {
+        "url": "https://spnsongs.halomademeapc.com",
+        "text": "See Demo",
+        "icon": "assets/svg/mono/open-in-new.svg"
+      }
+    ],
+    "expanded": false,
+    "tech": [
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "last.fm API",
+      "Bootstrap 4"
+    ]
+  },
+  {
     "name": "that robot company.",
     "color": [
       66,
@@ -97,11 +165,13 @@
     "routerLink": null,
     "description": "design doc",
     "blurb": "This was the design doc produced over the course of the semester for CGT356.  It includes personas, user stories, mood boards, typography and branding, sample photos, wireframes, and a UI prototype.",
-    "links": [{
-      "url": "assets/file/trc.pdf",
-      "text": "Read the doc",
-      "icon": "assets/svg/mono/file-pdf.svg"
-    }],
+    "links": [
+      {
+        "url": "assets/file/trc.pdf",
+        "text": "Read the doc",
+        "icon": "assets/svg/mono/file-pdf.svg"
+      }
+    ],
     "expanded": false,
     "tech": [
       "XD CC",
