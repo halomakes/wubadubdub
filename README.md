@@ -1,4 +1,14 @@
-# Wubadubdub
+# wubadubdub [![Build Status](https://travis-ci.org/halomademeapc/wubadubdub.png?branch=master)](https://travis-ci.org/halomademeapc/wubadubdub)
+Muh web site.
+
+## Requirements
+**To build**
+* Node.js
+
+## Building
+```powershell
+ng b --prod
+```
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
 
