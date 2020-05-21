@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarService } from '../navbar.service';
 import { NgAnimateScrollService } from 'ng-animate-scroll';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { NavLink } from './nav-link';
