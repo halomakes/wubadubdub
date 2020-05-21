@@ -1,10 +1,19 @@
 language: node_js
 node_js:
-  - "9"
+  - "12"
 dist: xenial
 sudo: required
 before_script:
   - npm install -g @angular/cli
 script:
-- ng lint
-- ng build --prod --base-href /
+  - ng lint
+  - ng build --prod --base-href /
+  - mv dist/index.html dist/404.html
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  fqdn: gravybind.halomademeapc.com
+  on:
+    branch: master
