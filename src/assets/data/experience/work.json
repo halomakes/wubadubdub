@@ -1,81 +1,89 @@
 [
-    {
-        "title": "Web Developer",
-        "date": "2018-01-06T00:00:00.000Z",
-        "location": "Indiana Farm Bureau Insurance",
-        "description": "I moved to a web developer position on the company’s New Media team. In this position, I develop applications using either C# (.NET Core or ASP.NET MVC 5 for older systems) or Java (Camel) for server-side code and Angular on the front end.  I’ve developed an event management system for Indiana Farm Bureau (the non-profit parent), expanded on DeskDex (which you can see in Creations), and enhanced other systems.  ",
-        "links": [],
-        "images": []
-    },
-    {
-        "title": "Internship: Technology Business Services",
-        "date": "2017-05-20T00:00:00.000Z",
-        "location": "Indiana Farm Bureau Insurance",
-        "description": "My part time work with Indiana Farm Bureau Insurance developed into another full-time internship. This year, I worked as a full-fledged employee as I had been with the company long enough to become acclimated to the environment. In addition to standard support, I led the charge on an overhaul of our device deployment process by integrating the Microsoft Deployment toolkit with our Configuration Manager installation, integrating firmware updates and application installations dynamically into the task sequences, and automating several other tasks that previously had to be performed manually. I developed a PowerShell script to check for VPN connection and remap users’ network drives when appropriate and deployed it alongside an upgrade to our Cisco AnyConnect client. I facilitated the removal of all McAfee products from our environment of over 2,000 devices and headed the desktop-end transition to CrowdStrike and Microsoft BitLocker Administration and Monitoring. I established a standard process for deploying software with Configuration Manager’s application model, packaged over 30 pieces of software, and provided documentation and training to other members of the team. I created group policy for Windows Hello and other application-specific needs. I also created task sequences and laid the groundwork for conducting bi-annual operating system upgrades to Windows 10 clients. I also filmed and edited a promotion video for the program as part of a project, which you can view via the link below.",
-        "links": [
-            {
-                "url": "https://youtu.be/LfeHgJjAfCk",
-                "text": "See the video on YouTube",
-                "icon": "assets/svg/icon/yt.svg"
-            },
-            {
-                "url": "https://photos.app.goo.gl/DB3bpzGs4e7I4KQj2",
-                "text": "See more on Google Photos",
-                "icon": "assets/svg/icon/photos.svg"
-            }
-        ],
-        "images": [
-            "assets/img/experience/intern2.jpg"
-        ]
-    },
-    {
-        "title": "Intro to Data Management Tutor",
-        "date": "2017-01-24T00:00:00.000Z",
-        "location": "Indiana University-Purdue University Indianapolis",
-        "description": "Tutoring for CIT214 - Intro to Data Management. This involved interacting with students both in-person and online. I also provided tutoring for CIT215 Web Programming.",
-        "links": [],
-        "images": []
-    },
-    {
-        "title": "Technology Business Support",
-        "date": "2016-08-06T00:00:00.000Z",
-        "location": "Indiana Farm Bureau Insurance",
-        "description": "Following my summer internship at the company, I began a part-time position in the TBS department. At this position, we provide support to employees of the company and oversee the deployment of new equipment and software.",
-        "links": [],
-        "images": []
-    },
-    {
-        "title": "Internship: QA Business Services",
-        "date": "2016-05-23T00:00:00.000Z",
-        "location": "Indiana Farm Bureau Insurance",
-        "description": "This internship focused on the business aspect of software and testing to make sure that everything works they way that a user would expect. During this 11-week program, I worked primarily on testing for an invoice redesign project. I also created test plans for Windows 10 deployment, development of a new site, and future mobile device development. During the internship, I and the 11 other interns were taken on several field trips to learn more about the insurance industry and interact with real customers. You can see photos below.",
-        "links": [
-            {
-                "url": "https://goo.gl/photos/t8drp1G9LBQJumhZA",
-                "text": "See more on Google Photos",
-                "icon": "assets/svg/icon/photos.svg"
-            }
-        ],
-        "images": [
-            "assets/img/experience/farm1.jpg",
-            "assets/img/experience/farm2.jpg",
-            "assets/img/experience/farm3.jpg"
-        ]
-    },
-    {
-        "title": "Teaching Assistant/Grader",
-        "date": "2016-03-06T00:00:00.000Z",
-        "location": "Kumon Math and Reading Center",
-        "description": "During the spring semester at IUPUI, I worked at Kumon of Brownsburg, a learning facility that specializes in Math and Reading. The business has a low-tech approach to learning, focusing on learning to think quickly rather than relying on technology. This was a great opportunity to experience working with children and a far better understanding the type of business that might resist technological change.",
-        "links": [],
-        "images": []
-    },
-    {
-        "title": "Graphics Editor",
-        "date": "2015-08-14T00:00:00.000Z",
-        "location": "The Exponent",
-        "description": "As Graphics Editor, I managed a team of roughly 10 artists. I was responsible for ensuring that articles in the paper had proper visuals to accompany them. I worked against regular deadlines to oversee my team, create graphics for print, design page layouts, film coverage videos, and develop website assets. See some of my work under the \"creations\" portion of the website.",
-        "links": [],
-        "images": []
-    }
+  {
+    "title": "Web Developer",
+    "date": "2019-02-01T00:00:00.000Z",
+    "location": "Indiana Farm Bureau Insurance",
+    "description": "I shifted from Associate Web Developer to Web Developer.  I focus largely on .NET Core/.NET Standard, Java, Angular, vanilla JavaScript, and Sitefinity (.NET Framework) in a full-stack setting but have a wide variety of responsibilities and technologies in my role. ",
+    "links": [],
+    "images": []
+  },
+  {
+    "title": "Associate Web Developer",
+    "date": "2018-01-06T00:00:00.000Z",
+    "location": "Indiana Farm Bureau Insurance",
+    "description": "I moved to a web developer position on the company’s New Media team. In this position, I develop applications using either C# (.NET Core or ASP.NET MVC 5 for older systems) or Java (Camel) for server-side code and Angular on the front end.  I’ve developed an event management system for Indiana Farm Bureau (the non-profit parent), expanded on DeskDex (which you can see in Creations), and enhanced other systems.  ",
+    "links": [],
+    "images": []
+  },
+  {
+    "title": "Internship: Technology Business Services",
+    "date": "2017-05-20T00:00:00.000Z",
+    "location": "Indiana Farm Bureau Insurance",
+    "description": "My part time work with Indiana Farm Bureau Insurance developed into another full-time internship. This year, I worked as a full-fledged employee as I had been with the company long enough to become acclimated to the environment. In addition to standard support, I led the charge on an overhaul of our device deployment process by integrating the Microsoft Deployment toolkit with our Configuration Manager installation, integrating firmware updates and application installations dynamically into the task sequences, and automating several other tasks that previously had to be performed manually. I developed a PowerShell script to check for VPN connection and remap users’ network drives when appropriate and deployed it alongside an upgrade to our Cisco AnyConnect client. I facilitated the removal of all McAfee products from our environment of over 2,000 devices and headed the desktop-end transition to CrowdStrike and Microsoft BitLocker Administration and Monitoring. I established a standard process for deploying software with Configuration Manager’s application model, packaged over 30 pieces of software, and provided documentation and training to other members of the team. I created group policy for Windows Hello and other application-specific needs. I also created task sequences and laid the groundwork for conducting bi-annual operating system upgrades to Windows 10 clients. I also filmed and edited a promotion video for the program as part of a project, which you can view via the link below.",
+    "links": [
+      {
+        "url": "https://youtu.be/LfeHgJjAfCk",
+        "text": "See the video on YouTube",
+        "icon": "assets/svg/icon/yt.svg"
+      },
+      {
+        "url": "https://photos.app.goo.gl/DB3bpzGs4e7I4KQj2",
+        "text": "See more on Google Photos",
+        "icon": "assets/svg/icon/photos.svg"
+      }
+    ],
+    "images": [
+      "assets/img/experience/intern2.jpg"
+    ]
+  },
+  {
+    "title": "Intro to Data Management Tutor",
+    "date": "2017-01-24T00:00:00.000Z",
+    "location": "Indiana University-Purdue University Indianapolis",
+    "description": "Tutoring for CIT214 - Intro to Data Management. This involved interacting with students both in-person and online. I also provided tutoring for CIT215 Web Programming.",
+    "links": [],
+    "images": []
+  },
+  {
+    "title": "Technology Business Support",
+    "date": "2016-08-06T00:00:00.000Z",
+    "location": "Indiana Farm Bureau Insurance",
+    "description": "Following my summer internship at the company, I began a part-time position in the TBS department. At this position, we provide support to employees of the company and oversee the deployment of new equipment and software.",
+    "links": [],
+    "images": []
+  },
+  {
+    "title": "Internship: QA Business Services",
+    "date": "2016-05-23T00:00:00.000Z",
+    "location": "Indiana Farm Bureau Insurance",
+    "description": "This internship focused on the business aspect of software and testing to make sure that everything works they way that a user would expect. During this 11-week program, I worked primarily on testing for an invoice redesign project. I also created test plans for Windows 10 deployment, development of a new site, and future mobile device development. During the internship, I and the 11 other interns were taken on several field trips to learn more about the insurance industry and interact with real customers. You can see photos below.",
+    "links": [
+      {
+        "url": "https://goo.gl/photos/t8drp1G9LBQJumhZA",
+        "text": "See more on Google Photos",
+        "icon": "assets/svg/icon/photos.svg"
+      }
+    ],
+    "images": [
+      "assets/img/experience/farm1.jpg",
+      "assets/img/experience/farm2.jpg",
+      "assets/img/experience/farm3.jpg"
+    ]
+  },
+  {
+    "title": "Teaching Assistant/Grader",
+    "date": "2016-03-06T00:00:00.000Z",
+    "location": "Kumon Math and Reading Center",
+    "description": "During the spring semester at IUPUI, I worked at Kumon of Brownsburg, a learning facility that specializes in Math and Reading. The business has a low-tech approach to learning, focusing on learning to think quickly rather than relying on technology. This was a great opportunity to experience working with children and a far better understanding the type of business that might resist technological change.",
+    "links": [],
+    "images": []
+  },
+  {
+    "title": "Graphics Editor",
+    "date": "2015-08-14T00:00:00.000Z",
+    "location": "The Exponent",
+    "description": "As Graphics Editor, I managed a team of roughly 10 artists. I was responsible for ensuring that articles in the paper had proper visuals to accompany them. I worked against regular deadlines to oversee my team, create graphics for print, design page layouts, film coverage videos, and develop website assets. See some of my work under the \"creations\" portion of the website.",
+    "links": [],
+    "images": []
+  }
 ]
