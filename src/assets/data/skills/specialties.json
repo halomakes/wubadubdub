@@ -3,9 +3,8 @@
         "fileName": "csharp",
         "description": "C#",
         "frameworks": [
-            "ASP.NET Core",
-            "ASP.NET MVC 5",
-            "Xamarin"
+            ".NET Core",
+            ".NET Standard"
         ]
     },
     {
