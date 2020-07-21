@@ -1,0 +1,50 @@
+[
+  {
+    "fileName": "sql",
+    "description": "SQL"
+  },
+  {
+    "fileName": "html",
+    "description": "HTML5"
+  },
+  {
+    "fileName": "css",
+    "description": "CSS3"
+  },
+  {
+    "fileName": "js",
+    "description": "JavaScript"
+  },
+  {
+    "fileName": "sass",
+    "description": "Sass"
+  },
+  {
+    "fileName": "py",
+    "description": "Python"
+  },
+  {
+    "fileName": "anim",
+    "description": "Adobe Animate"
+  },
+  {
+    "fileName": "lightroom",
+    "description": "Adobe Lightroom Classic"
+  },
+  {
+    "fileName": "indes",
+    "description": "Adobe InDesign"
+  },
+  {
+    "fileName": "inventor",
+    "description": "Autodesk Inventor"
+  },
+  {
+    "fileName": "3ds",
+    "description": "Autodesk 3ds Max"
+  },
+  {
+    "fileName": "sf",
+    "description": "Progress Sitefinity"
+  }
+]

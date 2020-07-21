@@ -1,0 +1,107 @@
+[{
+    "title": "Prix Pops",
+    "subtitle": "Graphic for The Exponent",
+    "path": "assets/gallery/prix-pops.png",
+    "blurb": null,
+    "sortOrder": 28,
+    "showMatte": false,
+    "video": null
+  },
+  {
+    "title": "Spotify Stats",
+    "subtitle": "Graphic for The Exponent",
+    "path": "assets/gallery/spotify.svg",
+    "blurb": null,
+    "sortOrder": 21,
+    "showMatte": true,
+    "video": null
+  }, {
+    "title": "Frosty",
+    "subtitle": "Graphic for The Exponent",
+    "path": "assets/gallery/frosty.svg",
+    "blurb": null,
+    "sortOrder": 22,
+    "showMatte": false,
+    "video": null
+  }, {
+    "title": "Colonizing Mars",
+    "subtitle": "Graphic for The Exponent",
+    "path": "assets/gallery/mars.jpg",
+    "blurb": null,
+    "sortOrder": 23,
+    "showMatte": false,
+    "video": null
+  }, {
+    "title": "Q4 Cover",
+    "subtitle": "Design for The Reveille",
+    "path": "assets/gallery/reveille-q4.jpg",
+    "blurb": null,
+    "sortOrder": 41,
+    "showMatte": false,
+    "video": null
+  }, {
+    "title": "Q3 Cover",
+    "subtitle": "Design for The Reveille",
+    "path": "assets/gallery/reveille-q3.jpg",
+    "blurb": null,
+    "sortOrder": 42,
+    "showMatte": false,
+    "video": null
+  }, {
+    "title": "Halo Logo",
+    "subtitle": "Render",
+    "path": "assets/gallery/rytyrtu.jpg",
+    "blurb": null,
+    "sortOrder": 52,
+    "showMatte": false,
+    "video": null
+  }, {
+    "title": "Fall Fest",
+    "subtitle": "Motion Graphic for The Net",
+    "path": null,
+    "blurb": null,
+    "sortOrder": 15,
+    "showMatte": false,
+    "video": "i4G4uGjAwyU"
+  }, {
+    "title": "Net Logo",
+    "subtitle": "Motion Graphic for The Net",
+    "path": null,
+    "blurb": null,
+    "sortOrder": 13,
+    "showMatte": false,
+    "video": "chAuLFL_kNU"
+  }, {
+    "title": "Walk-in Loop",
+    "subtitle": "Motion Graphic for The Net",
+    "path": null,
+    "blurb": null,
+    "sortOrder": 14,
+    "showMatte": false,
+    "video": "tLNfa3aWeqY"
+  }, {
+    "title": "Exponent Logo",
+    "subtitle": "Motion Graphic for The Exponent",
+    "path": null,
+    "blurb": null,
+    "sortOrder": 23,
+    "showMatte": false,
+    "video": "agWQRJK9jLI"
+  }, {
+    "title": "Ghost",
+    "subtitle": "Model for CGT112",
+    "path": "assets/gallery/day.jpg",
+    "blurb": null,
+    "sortOrder": 18,
+    "showMatte": false,
+    "video": null
+  }, {
+    "title": "Ghost (Night)",
+    "subtitle": "Model for CGT112",
+    "path": "assets/gallery/night.jpg",
+    "blurb": null,
+    "sortOrder": 19,
+    "showMatte": false,
+    "video": null
+  }
+]

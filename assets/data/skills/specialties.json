@@ -1,0 +1,33 @@
+[
+    {
+        "fileName": "csharp",
+        "description": "C#",
+        "frameworks": [
+            ".NET Core",
+            ".NET Standard"
+        ]
+    },
+    {
+        "fileName": "ts",
+        "description": "TypeScript",
+        "frameworks": [
+            "Angular"
+        ]
+    },
+    {
+        "fileName": "java",
+        "description": "Java",
+        "frameworks": [
+            "Android",
+            "Camel"
+        ]
+    },
+    {
+        "fileName": "ps",
+        "description": "PowerShell",
+        "frameworks": [
+            "Windows PowerShell",
+            "PowerShell Core"
+        ]
+    }
+]
