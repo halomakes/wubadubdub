@@ -97,9 +97,13 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
+              "src/sitemap.xml",
               "src/assets"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     },
