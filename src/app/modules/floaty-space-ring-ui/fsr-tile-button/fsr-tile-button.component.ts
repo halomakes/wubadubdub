@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, HostListener, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
 import { Coordinate } from '../fsr-button/coordinate';
 import { FsrMouseTrackerComponent } from '../fsr-mouse-tracker/fsr-mouse-tracker.component';
 
@@ -18,7 +18,7 @@ export class FsrTileButtonComponent implements OnInit, AfterViewInit, OnDestroy 
   private highlight: Array<number>;
   private primary: Array<number>;
   private dark: Array<number>;
-  protected pointerPosition: Coordinate = { x: 0, y: 0 };
+  protected pointerPosition: Coordinate = { x: null, y: null };
   protected gradientPosition: Coordinate = { x: 0, y: 0 };
   private animationFrame: number = null;
   public borderGradient: any = {};
@@ -31,6 +31,7 @@ export class FsrTileButtonComponent implements OnInit, AfterViewInit, OnDestroy 
   }
 
   ngAfterViewInit(): void {
+    this.updatePositioning();
     this.animate();
   }
 
@@ -41,6 +42,11 @@ export class FsrTileButtonComponent implements OnInit, AfterViewInit, OnDestroy 
   }
 
   protected animate = () => {
+    this.updatePositioning();
+    this.animationFrame = window.requestAnimationFrame(this.animate);
+  }
+
+  protected updatePositioning = (): void => {
     if (FsrMouseTrackerComponent.pointerPosition.x !== this.pointerPosition.x || FsrMouseTrackerComponent.pointerPosition.y !== this.pointerPosition.y) {
       this.pointerPosition = FsrMouseTrackerComponent.pointerPosition;
       this.gradientPosition = {
@@ -50,7 +56,6 @@ export class FsrTileButtonComponent implements OnInit, AfterViewInit, OnDestroy 
       this.borderGradient = this.getBorderGradient();
       this.backgroundGradient = this.getBackgroundGradient();
     }
-    this.animationFrame = window.requestAnimationFrame(this.animate);
   }
 
   private setColors = (baseColor: Array<number>): void => {

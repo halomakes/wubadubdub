@@ -1,4 +1,4 @@
-import { Component, Input, HostListener, ElementRef, OnDestroy, AfterViewInit } from '@angular/core';
+import { Component, Input, ElementRef, OnDestroy, AfterViewInit } from '@angular/core';
 import { FsrMouseTrackerComponent } from '../fsr-mouse-tracker/fsr-mouse-tracker.component';
 import { Coordinate } from './coordinate';
 
@@ -20,13 +20,14 @@ export class FsrButtonComponent implements AfterViewInit, OnDestroy {
 
   public borderGradient: any = {};
   public backgroundGradient: any = {};
-  protected pointerPosition: Coordinate = { x: 0, y: 0 };
+  protected pointerPosition: Coordinate = { x: null, y: null };
   protected gradientPosition: Coordinate = { x: 0, y: 0 };
   private animationFrame: number = null;
 
   constructor(public el: ElementRef<HTMLElement>) { }
 
   ngAfterViewInit(): void {
+    this.updatePositioning();
     this.animate();
   }
 
@@ -43,6 +44,11 @@ export class FsrButtonComponent implements AfterViewInit, OnDestroy {
   }
 
   protected animate = () => {
+    this.updatePositioning();
+    this.animationFrame = window.requestAnimationFrame(this.animate);
+  }
+
+  protected updatePositioning = (): void => {
     if (FsrMouseTrackerComponent.pointerPosition.x !== this.pointerPosition.x || FsrMouseTrackerComponent.pointerPosition.y !== this.pointerPosition.y) {
       this.pointerPosition = FsrMouseTrackerComponent.pointerPosition;
       this.gradientPosition = {
@@ -52,7 +58,6 @@ export class FsrButtonComponent implements AfterViewInit, OnDestroy {
       this.borderGradient = this.getBorderGradient();
       this.backgroundGradient = this.getBackgroundGradient();
     }
-    this.animationFrame = window.requestAnimationFrame(this.animate);
   }
 
   getBackgroundGradient = () => {
