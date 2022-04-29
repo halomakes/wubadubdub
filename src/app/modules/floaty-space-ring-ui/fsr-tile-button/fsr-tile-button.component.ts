@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
 import { Coordinate } from '../fsr-button/coordinate';
-import { FsrMouseTrackerComponent } from '../fsr-mouse-tracker/fsr-mouse-tracker.component';
+import { RevealComponent } from '../reaveal-component';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -8,7 +8,7 @@ import { FsrMouseTrackerComponent } from '../fsr-mouse-tracker/fsr-mouse-tracker
   templateUrl: './fsr-tile-button.component.html',
   styleUrls: ['./fsr-tile-button.component.scss']
 })
-export class FsrTileButtonComponent implements OnInit, AfterViewInit, OnDestroy {
+export class FsrTileButtonComponent extends RevealComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input() href: string;
   @Input() target: '_blank';
   @Input() fixed = false;
@@ -18,44 +18,18 @@ export class FsrTileButtonComponent implements OnInit, AfterViewInit, OnDestroy 
   private highlight: Array<number>;
   private primary: Array<number>;
   private dark: Array<number>;
-  protected pointerPosition: Coordinate = { x: null, y: null };
-  protected gradientPosition: Coordinate = { x: 0, y: 0 };
-  private animationFrame: number = null;
   public borderGradient: any = {};
   public backgroundGradient: any = {};
 
-  constructor(public el: ElementRef<HTMLElement>) { }
+  constructor(public el: ElementRef<HTMLElement>) { super(el); }
 
   ngOnInit() {
     this.setColors(this.color);
   }
 
-  ngAfterViewInit(): void {
-    this.updatePositioning();
-    this.animate();
-  }
-
-  ngOnDestroy(): void {
-    if (this.animationFrame) {
-      window.cancelAnimationFrame(this.animationFrame);
-    }
-  }
-
-  protected animate = () => {
-    this.updatePositioning();
-    this.animationFrame = window.requestAnimationFrame(this.animate);
-  }
-
-  protected updatePositioning = (): void => {
-    if (FsrMouseTrackerComponent.pointerPosition.x !== this.pointerPosition.x || FsrMouseTrackerComponent.pointerPosition.y !== this.pointerPosition.y) {
-      this.pointerPosition = FsrMouseTrackerComponent.pointerPosition;
-      this.gradientPosition = {
-        x: FsrMouseTrackerComponent.pointerPosition.x - this.el.nativeElement.offsetLeft,
-        y: FsrMouseTrackerComponent.pointerPosition.y - this.el.nativeElement.offsetTop - (this.fixed ? FsrMouseTrackerComponent.scrollPosition : 0)
-      };
-      this.borderGradient = this.getBorderGradient();
-      this.backgroundGradient = this.getBackgroundGradient();
-    }
+  protected override updateStyles(): void {
+    this.borderGradient = this.getBorderGradient();
+    this.backgroundGradient = this.getBackgroundGradient();
   }
 
   private setColors = (baseColor: Array<number>): void => {
