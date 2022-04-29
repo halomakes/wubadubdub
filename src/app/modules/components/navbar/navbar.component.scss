@@ -50,4 +50,22 @@
 .horizontal-scroll {
   overflow-x: auto;
   flex-shrink: 2;
+
+  & > * {
+    @media screen and (max-width: 640px) {
+      animation: scroll-hint 1s 4s ease forwards;
+    }
+  }
+}
+
+@keyframes scroll-hint {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

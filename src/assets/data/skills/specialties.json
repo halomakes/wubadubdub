@@ -3,21 +3,24 @@
         "fileName": "csharp",
         "description": "C#",
         "frameworks": [
-            ".NET Core",
-            ".NET Standard"
+            "ASP.NET Core",
+            ".NET Standard",
+            "Windows Presentation Foundation"
         ]
     },
     {
         "fileName": "ts",
         "description": "TypeScript",
         "frameworks": [
-            "Angular"
+            "Angular",
+            "Vanilla (Bundled w/ Webpack)"
         ]
     },
     {
         "fileName": "java",
         "description": "Java",
         "frameworks": [
+            "Spring Boot",
             "Android",
             "Camel"
         ]
@@ -26,7 +29,6 @@
         "fileName": "ps",
         "description": "PowerShell",
         "frameworks": [
-            "Windows PowerShell",
             "PowerShell Core"
         ]
     }

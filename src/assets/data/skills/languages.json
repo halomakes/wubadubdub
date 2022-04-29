@@ -4,24 +4,8 @@
     "description": "SQL"
   },
   {
-    "fileName": "html",
-    "description": "HTML5"
-  },
-  {
-    "fileName": "css",
-    "description": "CSS3"
-  },
-  {
-    "fileName": "js",
-    "description": "JavaScript"
-  },
-  {
     "fileName": "sass",
     "description": "Sass"
-  },
-  {
-    "fileName": "py",
-    "description": "Python"
   },
   {
     "fileName": "anim",
@@ -29,7 +13,7 @@
   },
   {
     "fileName": "lightroom",
-    "description": "Adobe Lightroom Classic"
+    "description": "Adobe Lightroom"
   },
   {
     "fileName": "indes",
@@ -46,5 +30,9 @@
   {
     "fileName": "sf",
     "description": "Progress Sitefinity"
+  },
+  {
+    "fileName": "capacitor",
+    "description": "Capacitor"
   }
 ]

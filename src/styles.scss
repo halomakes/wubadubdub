@@ -3,14 +3,14 @@
 @import "./reset.scss";
 @import "./values.scss";
 @import "./spacing.scss";
-@import 'node_modules/flexboxes/main';
-@import './simple-grid.scss';
-@import './typography.scss';
-@import './sizing.scss';
-@import './tooltip.scss';
-@import './animations.scss';
-@import './colors.scss';
-@import './components.scss';
+@import "node_modules/flexboxes/main";
+@import "./simple-grid.scss";
+@import "./typography.scss";
+@import "./sizing.scss";
+@import "./tooltip.scss";
+@import "./animations.scss";
+@import "./colors.scss";
+@import "./components.scss";
 
 * {
   font-family: $font;

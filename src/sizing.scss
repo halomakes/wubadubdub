@@ -1,5 +1,5 @@
 @for $index from 0 to 21 {
-  $size: percentage($index/20);
+  $size: percentage($index * 0.05);
   $label: $index * 5;
 
   .w-#{$label} {

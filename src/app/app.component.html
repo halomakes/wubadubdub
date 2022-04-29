@@ -1,5 +1,6 @@
 <div id="top"></div>
 <app-navbar></app-navbar>
+<fsr-mouse-tracker></fsr-mouse-tracker>
 <main [@routerTransition]="o.isActivated ? o.activatedRoute : ''" (@routerTransition.done)="animationDone($event)">
   <router-outlet #o="outlet"></router-outlet>
 </main>

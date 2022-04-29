@@ -1,4 +1,4 @@
-@import './values.scss';
+@import "./values.scss";
 
 .text-white {
   color: white;
@@ -6,6 +6,10 @@
 
 .text-hero {
   font-size: 4rem;
+
+  @media screen and (max-width: 640px) {
+    font-size: 2.7rem;
+  }
 }
 
 h1 {

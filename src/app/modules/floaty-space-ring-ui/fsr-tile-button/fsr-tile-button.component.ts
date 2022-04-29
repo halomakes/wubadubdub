@@ -1,4 +1,6 @@
-import { Component, OnInit, Input, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, AfterViewInit, OnDestroy } from '@angular/core';
+import { Coordinate } from '../fsr-button/coordinate';
+import { RevealComponent } from '../reaveal-component';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -6,7 +8,7 @@ import { Component, OnInit, Input, HostListener, ElementRef } from '@angular/cor
   templateUrl: './fsr-tile-button.component.html',
   styleUrls: ['./fsr-tile-button.component.scss']
 })
-export class FsrTileButtonComponent implements OnInit {
+export class FsrTileButtonComponent extends RevealComponent implements OnInit, AfterViewInit, OnDestroy {
   @Input() href: string;
   @Input() target: '_blank';
   @Input() fixed = false;
@@ -16,13 +18,18 @@ export class FsrTileButtonComponent implements OnInit {
   private highlight: Array<number>;
   private primary: Array<number>;
   private dark: Array<number>;
-  private lastScrollPos = 0;
-  private origin: { x: number, y: number } = { x: 0, y: 0 };
+  public borderGradient: any = {};
+  public backgroundGradient: any = {};
 
-  constructor(public el: ElementRef<HTMLElement>) { }
+  constructor(public el: ElementRef<HTMLElement>) { super(el); }
 
   ngOnInit() {
     this.setColors(this.color);
+  }
+
+  protected override updateStyles(): void {
+    this.borderGradient = this.getBorderGradient();
+    this.backgroundGradient = this.getBackgroundGradient();
   }
 
   private setColors = (baseColor: Array<number>): void => {
@@ -38,26 +45,13 @@ export class FsrTileButtonComponent implements OnInit {
     }
   }
 
-  @HostListener('window:scroll', ['$event'])
-  private checkScroll = (event: any): void => {
-    this.lastScrollPos = event.srcElement.scrollingElement.scrollTop;
-  }
-
-  @HostListener('window:mousemove', ['$event'])
-  onmousemove = (event: MouseEvent): void => {
-    this.origin = {
-      x: event.pageX - this.el.nativeElement.offsetLeft,
-      y: event.pageY - this.el.nativeElement.offsetTop - (this.fixed ? this.lastScrollPos : 0)
-    };
-  }
-
   getBackgroundGradient = () => <any>{
-    'background': `radial-gradient(circle at ${this.origin.x}px ${this.origin.y}px, rgb(${this.primary.join()}), rgb(${this.dark.join()}))`
+    'background': `radial-gradient(circle at ${this.gradientPosition.x}px ${this.gradientPosition.y}px, rgb(${this.primary.join()}), rgb(${this.dark.join()}))`
   }
 
   getBorderGradient = () => <any>{
     // tslint:disable-next-line:max-line-length
-    'background': `radial-gradient(circle at ${this.origin.x}px ${this.origin.y}px, rgb(${this.highlight.join()}) 0%, rgb(${this.light.join()}) 20%, rgb(${this.dark.join()}) 100%)`
+    'background': `radial-gradient(circle at ${this.gradientPosition.x}px ${this.gradientPosition.y}px, rgb(${this.highlight.join()}) 0%, rgb(${this.light.join()}) 20%, rgb(${this.dark.join()}) 100%)`
   }
 
   getGlow = () => <any>{

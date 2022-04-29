@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FloatySpaceRingUiModule } from './modules/floaty-space-ring-ui/floaty-space-ring-ui.module';
 import { PagesModule } from './modules/pages/pages.module';
 import { ComponentsModule } from './modules/components/components.module';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ComponentsModule } from './modules/components/components.module';
     FloatySpaceRingUiModule,
     PagesModule,
     ComponentsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxPageScrollCoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
