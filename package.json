@@ -22,7 +22,7 @@
     "@angular/router": "~13.3.5",
     "core-js": "^2.6.11",
     "flexboxes": "^0.7.0",
-    "ng2-tooltip-directive": "^2.9.20",
+    "ng2-tooltip-directive": "^2.10.3",
     "ngx-page-scroll-core": "^8.0.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
