@@ -2,14 +2,14 @@
   {
     "name": "PokeR",
     "color": [
-      0,
-      123,
-      255
+      53,
+      55,
+      72
     ],
     "icon": "assets/svg/creation/poker.svg",
     "routerLink": null,
     "description": "realtime scrum poker",
-    "blurb": "PokeR is a planning poker game that provides realtime interaction and some fun touches to make sprint planning less of a headache.",
+    "blurb": "PokeR is a planning poker game that provides realtime interaction and some fun touches to make sprint planning less of a headache.  Built with fully custom styles and components, this app turns otherwise mundane planning sessions into a pleasure.",
     "links": [
       {
         "url": "https://github.com/halomademeapc/pokeR",
@@ -17,7 +17,7 @@
         "icon": "assets/svg/mono/github.svg"
       },
       {
-        "url": "https://planning.halomademeapc.com",
+        "url": "https://app.planning.rocks",
         "text": "See Demo",
         "icon": "assets/svg/mono/open-in-new.svg"
       }
@@ -29,7 +29,38 @@
       "rxjs",
       "ASP.NET Core",
       "Entity Framework Core",
-      "Bootstrap 4"
+      "Sass",
+      "Docker"
+    ]
+  },
+  {
+    "name": "GravyBot",
+    "color": [
+      60,
+      112,
+      196
+    ],
+    "icon": "https://raw.githubusercontent.com/halomademeapc/GravyBot/master/logo.png",
+    "routerLink": null,
+    "description": "GravyBot - IRC bot framework",
+    "blurb": "GravyBot is an Internet Relay Chat (IRC) chat bot framework that provides a beautiful annotation-based command authoring system reminiscent of ASP.NET Core MVC.  The framework provides annotation-based command registration, documentation generation, channel permissions, rate limiting, and parameter binding withing a familiar scoped dependency injection container.  It also supports strongly-typed message interception and rules as well as modern features like async enumerables to prevent thread blocking and give super-fast performance.",
+    "links": [
+      {
+        "url": "https://github.com/halomademeapc/GravyBot",
+        "text": "View on GitHub",
+        "icon": "assets/svg/mono/github.svg"
+      },
+      {
+        "url": "https://www.nuget.org/packages/GravyBot/",
+        "text": "View on nuget.org",
+        "icon": "assets/svg/mono/open-in-new.svg"
+      }
+    ],
+    "expanded": false,
+    "tech": [
+      ".NET Standard",
+      "Internet Relay Chat",
+      "NuGet"
     ]
   },
   {
@@ -74,130 +105,24 @@
     "icon": "assets/svg/creation/phynd.svg",
     "routerLink": null,
     "description": "learning tic·tac·toe",
-    "blurb": "phÿnd is a machine-learning (in the loosest sense of the term) application that plays tic-tac-toe. phÿnd knows nothing about the game in terms of strategy; it only knows which moves it has made and whether that move led to a loss. phÿnd initially chooses a spot to place its cross at random, leading to some embarassing losses. However, as phÿnd loses, it becomes progressively less likely to make those same decisions that led to a loss.  The application is built around the MENACE concept, as outlined on the about page of the demo site.  This was my first application using Python and Bottle.",
+    "blurb": "This is a recreation of a school project.  The original was created using Python and Bottle; I thought it would be fun to revisit it and play with some new toys.  This version is built using Server-Side Blazor.  Everything is computed on the server side and events and HTML deltas are communicated with the client via WebSockets.  phÿnd is a machine-learning (in the loosest sense of the term) application that plays tic-tac-toe. phÿnd knows nothing about the game in terms of strategy; it only knows which moves it has made and whether that move led to a loss. phÿnd initially chooses a spot to place its cross at random, leading to some embarassing losses. However, as phÿnd loses, it becomes progressively less likely to make those same decisions that led to a loss.  The application is built around the MENACE concept, as outlined on the about page of the demo site.  ",
     "links": [
       {
-        "url": "https://github.com/halomademeapc/PhYnd",
+        "url": "https://github.com/halomademeapc/phyndotnet",
         "text": "View on GitHub",
         "icon": "assets/svg/mono/github.svg"
       },
       {
-        "url": "http://halomademeapc2.pythonanywhere.com/",
+        "url": "https://phynd.halomademeapc.com/",
         "text": "See Demo",
         "icon": "assets/svg/mono/open-in-new.svg"
       }
     ],
     "expanded": false,
     "tech": [
-      "Bottle",
-      "SQLite",
-      "Material Design Bootstrap",
-      "jQuery"
-    ]
-  },
-  {
-    "name": "PrimeHTML5",
-    "color": [
-      237,
-      30,
-      121
-    ],
-    "icon": "assets/svg/creation/prime.svg",
-    "routerLink": null,
-    "description": "a (very) basic benchmark",
-    "blurb": "PrimeHTML5 is a basic JavaScript benchmark that tests a device/browser’s ability to crunch prime numbers.  ",
-    "links": [
-      {
-        "url": "https://github.com/halomademeapc/PrimeHTML5",
-        "text": "View on GitHub",
-        "icon": "assets/svg/mono/github.svg"
-      },
-      {
-        "url": "http://primehtml5.halomademeapc.com",
-        "text": "See Demo",
-        "icon": "assets/svg/mono/open-in-new.svg"
-      }
-    ],
-    "expanded": false,
-    "tech": [
-      "jQuery Mobile"
-    ]
-  },
-  {
-    "name": "The Song List",
-    "color": [
-      0,
-      123,
-      255
-    ],
-    "icon": "assets/svg/creation/songlist.svg",
-    "routerLink": null,
-    "description": "exactly what it says",
-    "blurb": "The Song List is an app for tracking the songs that show up in a TV show.  Songs can be categorized, and linked to specific episodes.  The app features Google login and last.fm metadata integration. ",
-    "links": [
-      {
-        "url": "https://github.com/halomademeapc/TheSongList",
-        "text": "View on GitHub",
-        "icon": "assets/svg/mono/github.svg"
-      },
-      {
-        "url": "https://spnsongs.halomademeapc.com",
-        "text": "See Demo",
-        "icon": "assets/svg/mono/open-in-new.svg"
-      }
-    ],
-    "expanded": false,
-    "tech": [
-      "ASP.NET Core",
-      "Entity Framework Core",
-      "last.fm API",
-      "Bootstrap 4"
-    ]
-  },
-  {
-    "name": "that robot company.",
-    "color": [
-      66,
-      39,
-      54
-    ],
-    "icon": "assets/svg/creation/trc.svg",
-    "routerLink": null,
-    "description": "design doc",
-    "blurb": "This was the design doc produced over the course of the semester for CGT356.  It includes personas, user stories, mood boards, typography and branding, sample photos, wireframes, and a UI prototype.",
-    "links": [
-      {
-        "url": "assets/file/trc.pdf",
-        "text": "Read the doc",
-        "icon": "assets/svg/mono/file-pdf.svg"
-      }
-    ],
-    "expanded": false,
-    "tech": [
-      "XD CC",
-      "InDesign CC"
-    ]
-  },
-  {
-    "name": "Graphic Design",
-    "color": [
-      40,
-      40,
-      40
-    ],
-    "icon": "assets/svg/creation/graphics.svg",
-    "routerLink": [
-      "/creations/graphics"
-    ],
-    "description": null,
-    "blurb": "I’ve dabbled in graphic design throughout the years.  You can see some of what I’ve produced in the gallery below.",
-    "links": [],
-    "expanded": false,
-    "tech": [
-      "Animate CC",
-      "Illustrator CC",
-      "After Effects CC",
-      "Maya"
+      "Blazor",
+      ".NET Core",
+      "Material Design Bootstrap"
     ]
   }
 ]
