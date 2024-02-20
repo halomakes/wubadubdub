@@ -1,6 +1,6 @@
 <span class="overlay" [class.glow]="solid" (click)="onClick()">
-  <span class="fsr-btn-outline" [ngStyle]="getBorderGradient()" [class.fsr-btn-clip]="!solid"></span>
-  <div class="fsr-button" [class.fsr-button-lg]="size==='large'" [class.fsr-button-sm]="size==='small'" [ngStyle]="getBackgroundGradient()"
+  <span class="fsr-btn-outline" [ngStyle]="borderGradient" [class.fsr-btn-clip]="!solid"></span>
+  <div class="fsr-button" [class.fsr-button-lg]="size==='large'" [class.fsr-button-sm]="size==='small'" [ngStyle]="backgroundGradient"
     [class.dim]="this.color === 'grey'" [class.inactive]="inactive">
     <ng-content></ng-content>
   </div>

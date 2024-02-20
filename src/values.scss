@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 // Colors
 $primary: #8941f4;
 $white: white;
-$dim: #2F2F2F;
+$dim: #2f2f2f;
 
 $brightnessOffset: 4;
 
-$font: 'Raleway';
+$font: "Raleway";
 
 // Sizes
 $md: 1rem;
-$sm: .5rem;
+$sm: 0.5rem;
 
-$border-thick: .3rem;
+$border-thick: 0.3rem;
 
 $animate-interact: all 0.13s ease;
 
 $depress: 0.95;
 
-$glow: 0 0 .8rem transparentize($primary, .5);
+$glow: 0 0 0.8rem transparentize($primary, 0.5);

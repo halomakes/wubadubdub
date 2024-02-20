@@ -1,6 +1,6 @@
 <div class="flex home-hero text-white">
   <div class="video-fullscreen">
-    <video autoplay muted loop>
+    <video autoplay muted loop onloadedmetadata="this.muted = true" oncanplay="this.play()">
       <source src="assets/video/ringy.mp4" type="video/mp4">
     </video>
   </div>
@@ -10,7 +10,8 @@
         <h1 class="text-hero">{{mainContent?.title}}</h1>
         <p class="my-3 spaced">{{mainContent?.content}}</p>
         <div>
-          <fsr-button *ngIf="mainContent" [routerLink]="mainContent.link.action" size="large">{{mainContent.link?.text}}</fsr-button>
+          <fsr-button *ngIf="mainContent" [routerLink]="mainContent.link.action" size="large">{{mainContent.link?.text}}
+          </fsr-button>
         </div>
       </div>
     </div>
@@ -22,7 +23,8 @@
       <h1 class="text-hero">{{secondaryContent?.title}}</h1>
       <p class="my-3 spaced">{{secondaryContent?.content}}</p>
       <div>
-        <fsr-button *ngIf="secondaryContent" [routerLink]="secondaryContent.link.action" size="large">{{secondaryContent.link?.text}}</fsr-button>
+        <fsr-button *ngIf="secondaryContent" [routerLink]="secondaryContent.link.action" size="large">
+          {{secondaryContent.link?.text}}</fsr-button>
       </div>
     </div>
   </div>

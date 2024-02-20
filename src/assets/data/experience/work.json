@@ -1,5 +1,21 @@
 [
   {
+    "title": "Senior Software Engineer",
+    "date": "2022-07-14T00:00:00.000Z",
+    "location": "DeveloperTown",
+    "description": "I am working at the consulting firm DeveloperTown creating robust backend software for clients in the IoT, Health, Education, Banking, and Insurance fields.",
+    "links": [],
+    "images": []
+  },
+  {
+    "title": "Software Developer",
+    "date": "2021-08-28T00:00:00.000Z",
+    "location": "Indiana Farm Bureau Insurance",
+    "description": "My position at IFBI continued to evolve with more diverse technologies and increased responsibilities. I handled virtually all software development for their parent company, Indiana Farm Bureau Incorporated.  This includes their main Sitefinity websites, a Capacitor hybrid mobile app, multiple purpose-built applications using .NET + Angular, and a collection of APIs built in Spring Boot. I also did development for the insurance company including their marketing websites, digital forms, intranet, and some native desktop utilities.  When a project needs to be done well and done on-time, I was the go-to developer on my teams.",
+    "links": [],
+    "images": []
+  },
+  {
     "title": "Web Developer",
     "date": "2019-02-01T00:00:00.000Z",
     "location": "Indiana Farm Bureau Insurance",

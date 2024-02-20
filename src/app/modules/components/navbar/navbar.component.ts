@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { NavbarService } from '../navbar.service';
-import { NgAnimateScrollService } from 'ng-animate-scroll';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { NavLink } from './nav-link';
+import { PageScrollService } from 'ngx-page-scroll-core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
@@ -15,7 +16,8 @@ export class NavbarComponent implements OnInit {
   links: Array<any>;
 
   constructor(public navbar: NavbarService,
-    private scroll: NgAnimateScrollService,
+    private scroll: PageScrollService,
+    @Inject(DOCUMENT) private document: any,
     private router: Router,
     private http: HttpClient) { }
 
@@ -27,7 +29,10 @@ export class NavbarComponent implements OnInit {
 
   scrollToTop = (routerLink: Array<any>): void => {
     if (this.isActive(routerLink)) {
-      this.scroll.scrollToElement('top', 500);
+      this.scroll.scroll({
+        document: this.document,
+        scrollTarget: 'top'
+      });
     }
   }
 
